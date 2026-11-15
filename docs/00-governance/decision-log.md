@@ -82,10 +82,12 @@ Approver for all decisions: the user (project owner).
 - Context: ISS-006. `expectations.md` lists expectations for published implementations.
 - Decision:
   - A README explaining how to run the application locally becomes an engineering constraint (CON).
-  - Public repository: yes (DEC-006 c). Enabling the GitHub Issues section and keeping the implementation up to date after the project: not yet confirmed by the user.
+  - Public repository: yes (DEC-006 c).
+  - GitHub Issues section: enabled (user decision, 2026-11-16). Verified on 2026-11-16 via the GitHub REST API: `"has_issues": true`.
+  - Keeping the implementation up to date after the project: not yet confirmed by the user.
   - The ≥300 GitHub stars criterion for Django, Django Ninja, React, and Vite is verified in Phase 2 when versions are chosen.
 - Rationale: The README supports reproducibility (QO-5); the other items concern publishing, not the learning objectives.
-- Consequences: ISS-006 is resolved except the Issues section and post-project maintenance, which await user confirmation.
+- Consequences: ISS-006 is resolved except post-project maintenance, which awaits user confirmation.
 - Status: APPROVED by the user, 2026-11-16.
 
 ## DEC-008: Repository initialization and published content
@@ -108,7 +110,7 @@ Approver for all decisions: the user (project owner).
 
 ## Open points
 
-1. Enable the GitHub Issues section, and keep the implementation updated after the project (DEC-007).
+1. Keep the implementation updated after the project (DEC-007). The Issues section is decided and enabled.
 2. Confirm the DEC-008 implementation choices (archive location, `.docx` not committed, note file committed).
 3. Confirm the steering v1.1 additions and the list of NASA requirements proposed as not applicable (`engineering-process.md` §11).
 4. Decide whether to do the optional learning exercises: software classification (SWE-020) and requirements mapping matrix (SWE-125).
