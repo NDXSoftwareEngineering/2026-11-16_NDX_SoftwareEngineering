@@ -13,7 +13,7 @@ Approver for all decisions: the user (project owner).
 | DEC-005 | Code quality tools and Python dependency management | APPROVED | 2026-11-16 |
 | DEC-006 | Repository layout | APPROVED | 2026-11-16 |
 | DEC-007 | RealWorld ecosystem expectations | APPROVED | 2026-11-16 |
-| DEC-008 | Repository initialization and published content | APPROVED (items marked as agent choices await confirmation) | 2026-11-16 |
+| DEC-008 | Repository initialization and published content | APPROVED | 2026-11-16 |
 
 ---
 
@@ -102,15 +102,14 @@ Approver for all decisions: the user (project owner).
   - `RealWorld apps Documentation.docx` exists only in the downloaded copy, so it stays in `_archive/` and is not committed. Publishing it was not decided by the user.
   - The 2026-11-15 note (`2026-11-15 at 11.39.44 Note.txt`) is committed as the record of the agreed objectives. It contains the old OneDrive path.
   - `.gitattributes` normalizes text files to LF in the repository.
-  - Nothing is pushed to GitHub. The user creates the GitHub repository and performs the first push.
+  - The user creates the GitHub repository. Done: the user created it, and the agent pushed `main` at the user's request on 2026-11-16.
 - Consequences: All governance artifacts are under version control from the first commit. The RealWorld baseline is recorded in `docs/00-governance/realworld-baseline.md`.
-- Status: APPROVED by the user, 2026-11-16 (user decisions). Agent implementation choices: PROPOSED.
+- Status: APPROVED by the user, 2026-11-16. The user confirmed the implementation choices on 2026-11-16: archive in `_archive/`, `.docx` not committed, note file committed.
 
 ---
 
 ## Open points
 
 1. Keep the implementation updated after the project (DEC-007). The Issues section is decided and enabled.
-2. Confirm the DEC-008 implementation choices (archive location, `.docx` not committed, note file committed).
-3. Confirm the steering v1.1 additions and the list of NASA requirements proposed as not applicable (`engineering-process.md` §11).
-4. Decide whether to do the optional learning exercises: software classification (SWE-020) and requirements mapping matrix (SWE-125).
+2. Confirm the steering v1.1 additions and the list of NASA requirements proposed as not applicable (`engineering-process.md` §11).
+3. Decide whether to do the optional learning exercises: software classification (SWE-020) and requirements mapping matrix (SWE-125).
