@@ -1,0 +1,3 @@
+[submodule "realworld-main"]
+	path = realworld-main
+	url = https://github.com/realworld-apps/realworld

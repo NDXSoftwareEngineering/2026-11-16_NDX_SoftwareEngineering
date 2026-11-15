@@ -1,0 +1,57 @@
+Mục tiêu chúng ta đã thống nhất là:
+
+**Thực hành Software Engineering thông qua việc xây dựng hoàn chỉnh ứng dụng RealWorld – Conduit, từ yêu cầu đến triển khai, theo phương pháp và quy trình kỹ nghệ phần mềm có kiểm soát chất lượng.**
+
+Cụ thể, chúng ta thực hiện tuần tự 5 giai đoạn:
+
+1. **Requirements Engineering – Kỹ nghệ yêu cầu**
+
+   Phân tích đặc tả RealWorld, xác định yêu cầu chức năng, phi chức năng, use cases và truy vết yêu cầu.
+2. **Software Design – Thiết kế phần mềm**
+
+   Thiết kế kiến trúc, thành phần, dữ liệu, API và giao diện.
+3. **Software Construction – Xây dựng phần mềm**
+
+   Lập trình Backend, Frontend, cơ sở dữ liệu và tích hợp.
+4. **Software Testing – Kiểm thử phần mềm**
+
+   Xây dựng chiến lược kiểm thử, thực hiện kiểm thử và đánh giá chất lượng.
+5. **Deployment – Triển khai**
+
+   Đóng gói, triển khai, cấu hình môi trường và kiểm tra vận hành.
+
+### **Vai trò của bộ tài liệu NASA**
+
+Chúng ta sử dụng tài liệu NASA để học và vận dụng phương pháp kỹ nghệ phần mềm:
+
+- **NPR 7150.2D:** tham chiếu các yêu cầu và hoạt động kỹ nghệ phần mềm trong vòng đời.
+- **NASA-STD-8739.8B:** tham chiếu Software Assurance, Software Safety và IV&V.
+- **NASA Software Engineering Handbook Version D:** hướng dẫn thực hiện, giải thích, ví dụ, công cụ, checklist và bài học kinh nghiệm.
+
+Website chính thức: [https://swehb.nasa.gov/spaces/SWEHBVD/overview](https://swehb.nasa.gov/spaces/SWEHBVD/overview?utm_source=chatgpt.com)
+
+### **Công nghệ đã thống nhất**
+
+| Thành phần      | Công nghệ                         |
+| --------------- | --------------------------------- |
+| IDE             | Kiro                              |
+| Backend         | Python 3.12, Django, Django Ninja |
+| Frontend        | React, Vite                       |
+| Database        | PostgreSQL 17                     |
+| Testing         | pytest, Playwright                |
+| Version Control | Git, GitHub                       |
+| Hệ điều hành    | Windows 11                        |
+
+Thư mục dự án: `E:\Cloud\OneDrive\03 DIGITAL TRANSFORMATION\2026-11-15 at 11.39.00 thuc hanh Sorfware Engineering`.
+
+### **Những nguyên tắc không được thay đổi**
+
+1. RealWorld – Conduit là dự án thực hành xuyên suốt, không thay bằng ERPNext hay một ứng dụng khác.
+2. Đặc tả RealWorld là nguồn xác định yêu cầu nghiệp vụ. Không tự ý thêm yêu cầu nghiệp vụ từ NASA.
+3. NASA Handbook là nguồn hướng dẫn phương pháp luận, không phải mục tiêu xây dựng sản phẩm.
+4. Phải hoàn thành từng giai đoạn và kiểm soát chất lượng trước khi chuyển sang giai đoạn tiếp theo.
+5. Không bỏ qua sản phẩm bàn giao, tài liệu kỹ thuật, bằng chứng và tiêu chí nghiệm thu của từng giai đoạn.
+
+
+
+
