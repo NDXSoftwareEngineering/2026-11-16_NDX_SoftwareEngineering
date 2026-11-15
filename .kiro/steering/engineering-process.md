@@ -4,7 +4,7 @@ inclusion: always
 
 # Engineering Process: Mandatory Five-Phase Lifecycle
 
-Baseline version: 1.2 (2026-11-16). Status: v1.0 APPROVED by the user on 2026-11-16 (DEC-001). v1.1 added NASA and SWEBOK references verified from the local PDFs; these await user confirmation. v1.2 applies approved decisions DEC-002 to DEC-008 (`docs/00-governance/decision-log.md`).
+Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
 
 Methodology references: NPR 7150.2D (software engineering requirements and lifecycle activities), NASA-STD-8739.8B (software assurance, safety, IV&V), NASA Software Engineering Handbook (implementation guidance), SWEBOK Guide V4 (knowledge areas). These guide how work is done. They never add product requirements.
 
@@ -203,7 +203,7 @@ NPR 7150.2D SWE numbers below were checked against the local PDF text. They are 
 | --- | --- | --- |
 | Planning and governance (pre-phase) | SWE-013 software plans; SWE-024 track actual results against plans; SWE-034 define acceptance criteria; SWE-037 define review milestones; SWE-121 document approved tailoring; SWE-125 requirements mapping matrix; SWE-020 classification (Appendix D) | Ch 9 Engineering Management; Ch 10 Engineering Process |
 | 1. Requirements | SWE-050 establish and approve requirements; SWE-051 requirements analysis; SWE-053 manage requirement changes; SWE-054 track inconsistencies to closure; SWE-055 requirements validation; SWE-052 bidirectional traceability; SWE-200 requirements volatility | Ch 1 Software Requirements |
-| 2. Design | SWE-057 recorded software architecture; SWE-143 architecture review (category-dependent); SWE-058 detailed design; SWE-027 conditions for using OSS/reused components; SWE-154, SWE-156 cybersecurity risks and assessment | Ch 2 Software Architecture; Ch 3 Software Design; Ch 13 Software Security |
+| 2. Design | SWE-057 recorded software architecture; SWE-143 architecture review (required only for Category 1/2 projects; done here as a project choice); SWE-058 detailed design; SWE-027 conditions for using OSS/reused components; SWE-154, SWE-156 cybersecurity risks and assessment | Ch 2 Software Architecture; Ch 3 Software Design; Ch 13 Software Security |
 | 3. Construction | SWE-060 implement design in code; SWE-061 coding standards; SWE-207 secure coding practices; SWE-135 static analysis; SWE-185 verify secure coding with static analysis; SWE-062 unit test; SWE-186 repeatable unit test results | Ch 4 Software Construction |
 | 4. Testing | SWE-065 test plans, procedures, tests, reports; SWE-066 test against requirements; SWE-187 configuration management before testing; SWE-068 evaluate and record test results; SWE-071 keep test plans consistent with requirements; SWE-189, SWE-190 code coverage; SWE-191 regression testing; SWE-159 test cybersecurity mitigations | Ch 5 Software Testing; Ch 12 Software Quality |
 | 5. Deployment | SWE-073 validate on the target platform; SWE-063 version description per release; SWE-085 release and delivery procedures; SWE-075 operations and maintenance planning; SWE-077 deliver product with as-built records | Ch 6 Software Engineering Operations; Ch 7 Software Maintenance |
@@ -213,4 +213,10 @@ Proportionate interpretation for this project:
 - Project plans (SWE-013) are these steering files plus phase documents. A separate plan document is not required.
 - The requirements mapping matrix (SWE-125) and the classification exercise (SWE-020) were deferred by the user on 2026-11-16. If revisited, the mapping matrix is produced and lists each referenced SWE as Applied, Tailored, or Not applicable, with a reason.
 - Classification (SWE-020) is optional. The closest Appendix D definitions are Class E (design concept, research, and general purpose software) and Class F (general purpose computing, business, and IT software). Conduit is not NASA software, so any class assigned is a learning exercise and needs user approval.
-- [RECOMMENDATION, needs approval] Treat as not applicable: SWE-032 (CMMI rating), SWE-136 and SWE-070 (tool and simulation accreditation), SWE-141 and related IV&V requirements, and safety-critical requirements (SWE-023, SWE-134, SWE-184, SWE-192), because the project has no NASA category, no safety-critical software, and no flight software.
+- [DECISION DEC-009] Not applicable: SWE-032 (CMMI-DEV rating), SWE-070 (accredited models and simulations for flight software qualification), SWE-141 and related IV&V requirements (SWE-131, SWE-178, SWE-179), and safety-critical requirements (SWE-023, SWE-134, SWE-184, SWE-192). Reason: no NASA project category, no organization with a CMMI rating, no flight software, and no safety-critical or mission-critical software.
+- [DECISION DEC-009] SWE-136 (validate and accredit development tools) is applied in reduced form, without formal accreditation: record the version of every tool in test and build evidence; use only stable, maintained releases; pin versions in the Python requirements file and `package-lock.json`.
+- [DECISION DEC-009] SWE-143 (architecture review) is required by NPR 7150.2D only for Category 1 projects and Category 2 projects with Class A or B payload risk. This project still reviews its architecture at QG2, as a project choice, not because SWE-143 requires it.
+
+Limits of this mapping (accepted by the user, DEC-009):
+- Assigning SWE numbers and SWEBOK chapters to phases is the agent's engineering judgment, not a mapping published by NASA or SWEBOK.
+- NPR 7150.2D SWE-052 Table 1 (traceability by software class) lost its column layout during PDF text extraction. This project does not cite it per class; it applies full bidirectional traceability as a project choice.

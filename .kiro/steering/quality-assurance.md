@@ -4,7 +4,7 @@ inclusion: always
 
 # Quality Assurance
 
-Baseline version: 1.2 (2026-11-16). Status: v1.0 APPROVED by the user on 2026-11-16 (DEC-001). v1.1 added NASA and SWEBOK references verified from the local PDFs; these await user confirmation. v1.2 applies approved decisions DEC-002 to DEC-008 (`docs/00-governance/decision-log.md`).
+Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
 
 Methodology basis: NASA-STD-8739.8B (software assurance tasks and IV&V concepts), NPR 7150.2D (SWE-022 plan and implement software assurance per NASA-STD-8739.8; verification and validation requirements listed in `engineering-process.md` §11), NASA-HDBK-2203 (guidance), and SWEBOK v4.0a Ch 5 Software Testing, Ch 8 Software Configuration Management, Ch 12 Software Quality, and Ch 13 Software Security. SWE numbers are cited only after they have been checked in the source.
 

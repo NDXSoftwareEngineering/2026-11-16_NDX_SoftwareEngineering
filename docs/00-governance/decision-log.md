@@ -14,6 +14,7 @@ Approver for all decisions: the user (project owner).
 | DEC-006 | Repository layout | APPROVED | 2026-11-16 |
 | DEC-007 | RealWorld ecosystem expectations | APPROVED | 2026-11-16 |
 | DEC-008 | Repository initialization and published content | APPROVED | 2026-11-16 |
+| DEC-009 | Steering v1.1 references and NASA applicability | APPROVED | 2026-11-16 |
 
 ---
 
@@ -106,10 +107,22 @@ Approver for all decisions: the user (project owner).
 - Consequences: All governance artifacts are under version control from the first commit. The RealWorld baseline is recorded in `docs/00-governance/realworld-baseline.md`.
 - Status: APPROVED by the user, 2026-11-16. The user confirmed the implementation choices on 2026-11-16: archive in `_archive/`, `.docx` not committed, note file committed.
 
+## DEC-009: Steering v1.1 references and NASA applicability
+
+- Context: Steering v1.1 added NASA and SWEBOK references verified from the local PDFs (text extracted with pypdf). Several NPR 7150.2D requirements were proposed as not applicable.
+- Decision:
+  - Accept the v1.1 additions, with these limits: the phase-to-SWE and phase-to-SWEBOK mapping is the agent's engineering judgment; SWE-052 Table 1 could not be read reliably per software class and is not cited per class.
+  - Not applicable: SWE-032, SWE-070, SWE-141 and related IV&V requirements (SWE-131, SWE-178, SWE-179), SWE-023, SWE-134, SWE-184, SWE-192.
+  - SWE-136 applied in reduced form: record tool versions in evidence, use stable maintained releases, pin versions; no formal accreditation.
+  - SWE-143: not required for this project; the QG2 architecture review is a project choice.
+- Rationale: Verified wording of each requirement (re-checked 2026-11-16): SWE-032 requires a CMMI-DEV rating; SWE-070 concerns flight software qualification; SWE-141 and SWE-143 apply to Category 1/2 NASA projects; SWE-023 and SWE-134 apply to safety-critical or mission-critical software; SWE-136 addresses the risk that tools insert defects, which still exists here.
+- Consequences: `engineering-process.md` §11 updated; steering version 1.3.
+- Status: APPROVED by the user, 2026-11-16.
+
 ---
 
 ## Open points
 
 1. Keep the implementation updated after the project (DEC-007). The Issues section is decided and enabled.
-2. Confirm the steering v1.1 additions and the list of NASA requirements proposed as not applicable (`engineering-process.md` §11).
+2. Steering v1.1 additions and NASA applicability: RESOLVED by DEC-009.
 3. Optional learning exercises, software classification (SWE-020) and requirements mapping matrix (SWE-125): DEFERRED by the user on 2026-11-16. Not done now; may be revisited later.

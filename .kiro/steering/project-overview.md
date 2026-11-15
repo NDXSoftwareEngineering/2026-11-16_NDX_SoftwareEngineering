@@ -4,7 +4,7 @@ inclusion: always
 
 # Project Overview: Software Engineering Practice with RealWorld Conduit
 
-Baseline version: 1.2 (2026-11-16). Status: v1.0 APPROVED by the user on 2026-11-16 (DEC-001). v1.1 added NASA and SWEBOK references verified from the local PDFs; these await user confirmation. v1.2 applies approved decisions DEC-002 to DEC-008 (`docs/00-governance/decision-log.md`).
+Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
 Companion steering files: `engineering-process.md`, `requirements-and-sources.md`, `technology-stack.md`, `quality-assurance.md`. If these files disagree, stop and report the conflict; do not pick one silently.
 
 ## 1. Purpose
