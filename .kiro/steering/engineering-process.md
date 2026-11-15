@@ -4,7 +4,7 @@ inclusion: always
 
 # Engineering Process: Mandatory Five-Phase Lifecycle
 
-Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
+Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 Methodology references: NPR 7150.2D (software engineering requirements and lifecycle activities), NASA-STD-8739.8B (software assurance, safety, IV&V), NASA Software Engineering Handbook (implementation guidance), SWEBOK Guide V4 (knowledge areas). These guide how work is done. They never add product requirements.
 
@@ -35,6 +35,18 @@ Methodology references: NPR 7150.2D (software engineering requirements and lifec
 
 Phase status values: NOT STARTED → IN PROGRESS → READY FOR REVIEW → ACCEPTED (by user) or REWORK.
 
+Document status values (steering files, phase documents, gate records), defined by the user in the Quality Gate S1 review:
+
+| Status | Meaning |
+| --- | --- |
+| DRAFT | Created but not yet reviewed. |
+| READY FOR REVIEW | Self-checked by Kiro and submitted for user review. |
+| APPROVED | Explicitly approved by the user, with an entry in the approval evidence register. |
+
+Decision status values: PROPOSED (written by Kiro, not yet presented for a decision or not yet answered), PENDING USER APPROVAL (presented, answer missing or ambiguous), APPROVED (evidence entry exists), REJECTED, DEFERRED, SUPERSEDED.
+
+Approval evidence rule: Kiro marks a document or decision APPROVED only when the approval evidence register in `docs/00-governance/decision-log.md` §1 holds the user's verbatim statement, its date, and what it answered. An approval covers only what was presented to the user; later text edits return the document to READY FOR REVIEW. A user instruction that implies a choice is recorded as implied, not as an approval.
+
 ## 3. Documentation Location
 
 [DECISION DEC-002] Lifecycle documents live under `docs/` at the project Git repository root, one folder per phase: `docs/00-governance/`, `docs/01-requirements/`, `docs/02-design/`, `docs/03-construction/`, `docs/04-testing/`, `docs/05-deployment/`. Steering files stay in `.kiro/steering/`. Create each phase folder when that phase starts. Decision records are kept in `docs/00-governance/decision-log.md`.
@@ -48,6 +60,8 @@ Gate record (`QGn`), one per phase gate:
 - Open issues carried forward, each with the user's explicit acceptance.
 - Reviewer(s) and review type (self-check by agent, or user review).
 - User decision: ACCEPTED or REWORK, with date. Only the user writes this field.
+
+Governance gate S1 (pre-phase, introduced by the user's steering review): Phase 1 starts only after the user accepts Quality Gate S1 for the governance baseline (steering files, decision log, source inventory). The review package is `docs/00-governance/qg-s1-review-package.md`.
 
 ## 5. Phase 1: Requirements Engineering (QG1)
 
@@ -195,9 +209,9 @@ Quality Gate QG5: User accepts the deployment and final report. The project is c
 
 If a later phase finds a defect in an earlier artifact (for example a requirements error found in testing), raise a change request (see `requirements-and-sources.md`), update the earlier artifact, and re-run the affected review. Earlier gates are not re-opened silently.
 
-## 11. Methodology Mapping (verified references)
+## 11. Methodology Mapping
 
-NPR 7150.2D SWE numbers below were checked against the local PDF text. They are learning references for each phase, applied proportionately (see `quality-assurance.md` §1). They are not product requirements and do not imply NASA compliance. SWEBOK references are chapters of SWEBOK Guide v4.0a.
+Each NPR 7150.2D SWE number below was checked to exist as a `[SWE-NNN]` tag in the text extracted from the local NPR 7150.2D PDF, and its one-line summary was written from the requirement sentence. The NASA Handbook was not used for this mapping. Inspection coverage: `docs/00-governance/source-inventory.md`. They are learning references for each phase, applied proportionately (see `quality-assurance.md` §1). They are not product requirements and do not imply NASA compliance. SWEBOK references are chapters of SWEBOK Guide v4.0a.
 
 | Phase / topic | NPR 7150.2D references | SWEBOK v4.0a |
 | --- | --- | --- |
@@ -211,7 +225,7 @@ NPR 7150.2D SWE numbers below were checked against the local PDF text. They are 
 
 Proportionate interpretation for this project:
 - Project plans (SWE-013) are these steering files plus phase documents. A separate plan document is not required.
-- The requirements mapping matrix (SWE-125) and the classification exercise (SWE-020) were deferred by the user on 2026-11-16. If revisited, the mapping matrix is produced and lists each referenced SWE as Applied, Tailored, or Not applicable, with a reason.
+- The requirements mapping matrix (SWE-125) and the classification exercise (SWE-020) were deferred by the user on 2026-11-16 (DEC-010, evidence E-07). If revisited, the mapping matrix is produced and lists each referenced SWE as Applied, Tailored, or Not applicable, with a reason.
 - Classification (SWE-020) is optional. The closest Appendix D definitions are Class E (design concept, research, and general purpose software) and Class F (general purpose computing, business, and IT software). Conduit is not NASA software, so any class assigned is a learning exercise and needs user approval.
 - [DECISION DEC-009] Not applicable: SWE-032 (CMMI-DEV rating), SWE-070 (accredited models and simulations for flight software qualification), SWE-141 and related IV&V requirements (SWE-131, SWE-178, SWE-179), and safety-critical requirements (SWE-023, SWE-134, SWE-184, SWE-192). Reason: no NASA project category, no organization with a CMMI rating, no flight software, and no safety-critical or mission-critical software.
 - [DECISION DEC-009] SWE-136 (validate and accredit development tools) is applied in reduced form, without formal accreditation: record the version of every tool in test and build evidence; use only stable, maintained releases; pin versions in the Python requirements file and `package-lock.json`.

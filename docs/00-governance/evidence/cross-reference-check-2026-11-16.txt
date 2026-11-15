@@ -1,0 +1,29 @@
+Reference file hashes (SHA-256), 2026-11-16
+52769f6aaf664aa8d234f895b1625c5a2f7b9602f1e09a77d46cb7eb3639b325    290967 bytes  git-tracked=True  The NASA Software Engineering Handbook/Book A. Introduction.pdf
+6e0438be580d9b402b9e8196da960de80ae1a260cb99c0b0103d1d50867bf120    172235 bytes  git-tracked=True  The NASA Software Engineering Handbook/Book B. Institutional Requirements.pdf
+9e630b204870f418b645982d5004184e65069487f7214171db7928dbea2c200d    228037 bytes  git-tracked=True  The NASA Software Engineering Handbook/Book C. Project Software Requirements.pdf
+b5c7708b3e4d68e880a03d9057e65634593ab2a814f383b4ada4842b34597c76     63645 bytes  git-tracked=True  The NASA Software Engineering Handbook/Book D. Topics.pdf
+d8c352c5b3c03c02ee0fe274cd98d7170192defa9623b08c1cc8d0730745d6fa      4081 bytes  git-tracked=True  The NASA Software Engineering Handbook/Book E. Tools, References, and Terms.pdf
+82dccd3c80b9d4cfd05ec68b15538d70f85ebb121459ee523d6a51fe313a18b3     98407 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-002 - Software Engineering Initiative.pdf
+4ffcdc54eb8f3cdf2537fc4a17f0260e5ce7e88c34e47569d10faf7e36c32b39     98407 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-002 - Software Engineering.pdf
+5dda5c588569193c2e1a0caab1f8914932b204bd070c2b1fb1655883425be9e8    111293 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-003 - Center Improvement Plans.pdf
+1b666ee95da8e0c113401cd55b37e31afc882c75dfb4501a5221a84da0b537ef     99406 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-004 - OCE Benchmarking.pdf
+889da98e3945a088e6d375cee4e4e7291022532761309e84edd48273e69ce9ee    111161 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-005 - Software Processes.pdf
+c5010755f92fff16f86a74c2e463924fab39dadac78f07ab31ba7c7ae66b21e1    106499 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-006 - Center Software Invent_8aa7bb645c624d3e971d74dd2cf63a81-151126-1205-22.pdf
+4468132ec4af6651cd25398e81166fe5146578e4d404902e1e52dbd2963c2215    294962 bytes  git-tracked=True  The NASA Software Engineering Handbook/SWE-013 - Software Plans_e6fb373d4621487baa52a90a7f9a123d-151126-1205-24.pdf
+e2fcf97ec48cb83431cf7f6a68fe51b81a57e5df00ffa5ca0ecb686897d7a664    692102 bytes  git-tracked=True  The NASA Software Engineering Handbook/The NASA Software Assurance and Software Safety Standard requirements, NASA-STD-8739.8B.pdf
+1a5b7f9b0b0141e88374adf7a21a4d6ced0b29c221ca89a0a514f495d6532802    566622 bytes  git-tracked=True  The NASA Software Engineering Handbook/The NASA Software Engineering Requirements, NPR 7150.2D.pdf
+0c9db4da0b2425c58cf778b99131eb31bb6c188e98b67163a549a1366d96e511   6015672 bytes  git-tracked=False  swebok-v4.pdf
+48d581cc9cd167654e4789bd311a348fc0128e42f8ca97e31f4e1f99bd0baee2      3201 bytes  git-tracked=True  2026-11-15 at 11.39.44 Note.txt
+
+Decision records defined: ['DEC-001', 'DEC-002', 'DEC-003', 'DEC-004', 'DEC-005', 'DEC-006', 'DEC-007', 'DEC-008', 'DEC-009', 'DEC-010', 'DEC-011', 'DEC-012', 'DEC-013', 'DEC-014']
+Evidence entries defined: ['E-01', 'E-02', 'E-03', 'E-04', 'E-05', 'E-06', 'E-07', 'E-08']
+Evidence IDs used in log but not defined: none
+engineering-process.md: DEC refs ['DEC-002', 'DEC-009']; undefined DEC: none; undefined E-: none
+project-overview.md: DEC refs ['DEC-003', 'DEC-004', 'DEC-005', 'DEC-006', 'DEC-007', 'DEC-012', 'DEC-013']; undefined DEC: none; undefined E-: none
+quality-assurance.md: DEC refs ['DEC-003', 'DEC-005', 'DEC-013']; undefined DEC: none; undefined E-: none
+requirements-and-sources.md: DEC refs ['DEC-003', 'DEC-006', 'DEC-007', 'DEC-012', 'DEC-014']; undefined DEC: none; undefined E-: none
+technology-stack.md: DEC refs ['DEC-003', 'DEC-004', 'DEC-005', 'DEC-006', 'DEC-008', 'DEC-011', 'DEC-012', 'DEC-013']; undefined DEC: none; undefined E-: none
+realworld-baseline.md: DEC refs ['DEC-006', 'DEC-008', 'DEC-012']; undefined DEC: none; undefined E-: none
+
+Index status per decision: {'DEC-002': 'APPROVED', 'DEC-003': 'APPROVED', 'DEC-004': 'APPROVED', 'DEC-005': 'APPROVED', 'DEC-006': 'APPROVED', 'DEC-007': 'APPROVED', 'DEC-008': 'APPROVED', 'DEC-009': 'APPROVED', 'DEC-010': 'APPROVED', 'DEC-011': 'PROPOSED', 'DEC-012': 'PROPOSED', 'DEC-013': 'PROPOSED', 'DEC-014': 'PENDING USER APPROVAL'}

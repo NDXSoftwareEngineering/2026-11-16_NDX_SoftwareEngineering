@@ -4,7 +4,7 @@ inclusion: always
 
 # Requirements and Sources
 
-Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
+Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 ## 1. Source Hierarchy
 
@@ -33,10 +33,13 @@ Rules:
 | --- | --- | --- | --- |
 | MTH-NPR | NASA NPR 7150.2D, NASA Software Engineering Requirements. Effective 2022-03-08, expires 2027-03-08. 89 pages. | `The NASA Software Engineering Handbook/The NASA Software Engineering Requirements, NPR 7150.2D.pdf` | Lifecycle activities and engineering practice (SWE-numbered requirements in Chapters 3–5; classification in Appendix D) |
 | MTH-STD | NASA-STD-8739.8B, Software Assurance and Software Safety. Approved 2022-09-08. 70 pages. | `The NASA Software Engineering Handbook/The NASA Software Assurance and Software Safety Standard requirements, NASA-STD-8739.8B.pdf` | Software assurance tasks mapped to SWE numbers; IV&V and independence definitions |
-| MTH-HB | NASA Software Engineering and Software Assurance Handbook, NASA-HDBK-2203 (title page in the local copy: 2203B, approved 2022-03-08). Partial local export: Books A–E are mostly index pages, plus full pages for SWE-002 (two variant files), 003, 004, 005, 006, 013. | `The NASA Software Engineering Handbook/` and https://swehb.nasa.gov/spaces/SWEHBVD/overview | Guidance, rationale, checklists, lessons learned |
-| MTH-SWEBOK | SWEBOK Guide v4.0a (released August 2026, IEEE Computer Society), 411 pages, 18 knowledge areas | `swebok-v4.pdf` | Professional knowledge reference |
+| MTH-HB-LOCAL | Local partial export of the NASA Software Engineering and Software Assurance Handbook, NASA-HDBK-2203. Book A title material shows "NASA-HDBK-2203B, Approved: March 08, 2022"; Book A pages also show website posts dated October 2025. 12 files, 151 pages: Books A–E (section listings of SWE titles and requirement statements; Book D is a topic listing; Book E is one page) and the full guidance pages of SWE-002 (two files with identical extracted page text but different file hashes), SWE-003, SWE-004, SWE-005, SWE-006, SWE-013. | `The NASA Software Engineering Handbook/` (all files except the NPR and STD PDFs) | Guidance and lessons learned for the listed SWEs only. Not a complete Handbook. |
+| MTH-HB-ONLINE | Official online NASA Software Engineering Handbook (space SWEHBVD, called "Version D" in the 2026-11-15 note) | https://swehb.nasa.gov/spaces/SWEHBVD/overview | Complete guidance. NOT CHECKED: not fetched or read during governance setup. |
+| MTH-SWEBOK | SWEBOK Guide v4.0a (released August 2026, IEEE Computer Society), 411 pages, 18 knowledge areas | `swebok-v4.pdf` (local only, not committed) | Professional knowledge reference |
 
-The text of all these PDFs was extracted with pypdf on 2026-11-16. SWE numbers cited in these steering files were checked against the extracted NPR 7150.2D text.
+The text of all these PDFs was extracted with pypdf on 2026-11-16. SWE numbers cited in these steering files were checked against the extracted NPR 7150.2D text. Exactly what was read in each source is recorded in `docs/00-governance/source-inventory.md` §3.
+
+Handbook coverage rule: this baseline does not cite Handbook guidance content. Before citing guidance from the Handbook for any SWE, read that SWE's page in MTH-HB-ONLINE, or in MTH-HB-LOCAL if the SWE is one of the six exported, and record the page and version label. Do not claim Handbook coverage for content that was not read.
 
 Rules:
 - NASA and SWEBOK content never becomes a Conduit product requirement automatically. A process practice may be adopted as a project engineering constraint (CON) only with user approval.
@@ -116,12 +119,13 @@ When a source is missing, ambiguous, conflicting, or unverifiable:
 
 | ID | Type | Description | Proposed handling |
 | --- | --- | --- | --- |
-| ISS-001 | MISSING | The downloaded `realworld-main/` had no Git metadata; the upstream commit was unknown. | RESOLVED (DEC-006 b, DEC-008): all 337 files matched upstream commit `25588846`; the submodule is pinned there. |
+| ISS-001 | MISSING | The downloaded `realworld-main/` had no Git metadata; the upstream commit was unknown. | RESOLVED as a fact: all 337 files of the inspected copy are identical to upstream commit `25588846` (`docs/00-governance/realworld-baseline.md`). The submodule is approved (DEC-006 b); pinning to this commit is PROPOSED (DEC-012). |
 | ISS-002 | CONFLICT | Backend port: `specs/api/hurl/run-hurl-tests.sh` defaults to `http://localhost:8000`; `specs/api/README.md` and `CLAUDE.md` examples use `http://localhost:3000/api`. | Port is a design decision (Phase 2). Not a product requirement. |
 | ISS-003 | CONFLICT | `RealWorld apps Documentation.docx` is an older snapshot: it says "Over 150 implementations" and "Bootstrap 4 theme" and lists different maintainers, while the repository README says "Over 100" and refers to `assets/theme/styles.css`. | Use repository sources over the docx. |
 | ISS-004 | AMBIGUOUS | Frontend routing docs say "Authentication can be easily switched to session/cookie based", while the E2E selector contract requires a LocalStorage JWT key. | Follow SRC-E2E (higher precedence); confirm in Phase 1. |
 | ISS-005 | CONFLICT | RealWorld frontend and backend docs require at least one unit test per repository. The agreed stack names Playwright for frontend testing, which is mainly an E2E tool. | RESOLVED by DEC-003: Vitest for frontend unit tests. |
-| ISS-006 | AMBIGUOUS | `expectations.md` contains ecosystem expectations (public GitHub repo with Issues open, framework with ≥300 stars, keep up to date). Their applicability to this learning project is undecided. | PARTLY RESOLVED by DEC-007: README becomes C-07; repository visibility and Issues depend on DEC-006 (c); star counts checked in Phase 2. |
-| ISS-007 | CONFLICT | The local NASA-STD-8739.8B PDF shows "Approved: 2022-09-08" and also contains the notice "This official draft has not been approved and is subject to modification. DO NOT USE PRIOR TO APPROVAL." | Use it as a learning reference only. Optionally replace it with the official copy from the NASA Technical Standards System. |
-| ISS-008 | AMBIGUOUS | Handbook version labels differ: the 2026-11-15 note and website URL say "Version D" (SWEHBVD), while the local Book A title material shows NASA-HDBK-2203B. The local export is also partial. | Treat the website as the full source; record the version label with each Handbook citation. |
+| ISS-006 | AMBIGUOUS | `expectations.md` contains ecosystem expectations (public GitHub repo with Issues open, framework with ≥300 stars, keep up to date). Their applicability to this learning project is undecided. | RESOLVED by DEC-007 (README = C-07, public repository, Issues enabled; star counts checked in Phase 2), except post-project maintenance: DEC-014, PENDING USER APPROVAL. |
+| ISS-007 | CONFLICT | The local NASA-STD-8739.8B PDF shows "Approved: 2022-09-08" and also contains the notice "This official draft has not been approved and is subject to modification. DO NOT USE PRIOR TO APPROVAL." | Use it as a learning reference only. Optionally replace it with the official copy from the NASA Technical Standards System. OPEN. |
+| ISS-008 | AMBIGUOUS | Handbook version labels differ: the 2026-11-15 note and website URL say "Version D" (SWEHBVD), while the local Book A title material shows NASA-HDBK-2203B. The local export covers only six SWE guidance pages plus section listings (MTH-HB-LOCAL). | Treat MTH-HB-ONLINE as the full source; record the version label and page with each Handbook citation. OPEN. |
 | ISS-009 | MISSING | NPR 7150.2D states an expiration date of 2027-03-08, which may fall within the project. | Check NODIS for a successor before Phase 5; keep citing 7150.2D unless the user decides otherwise. |
+| ISS-010 | UNVERIFIABLE | The user approvals recorded in `docs/00-governance/decision-log.md` §1 are transcribed from the Kiro chat session, which is not stored in the repository. | The user confirms the evidence register when deciding Quality Gate S1. OPEN. |

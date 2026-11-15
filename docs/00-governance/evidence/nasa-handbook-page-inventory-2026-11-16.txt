@@ -1,0 +1,177 @@
+NASA Handbook local export - page inventory (pypdf 5.1.0), 2026-11-16
+Per page: first 110 characters of extracted text (whitespace collapsed).
+
+== Book A. Introduction.pdf | pages=10 | sha256=52769f6aaf664aa8
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: Updated Topic 5.09 - SRS - Software Requirements Specification and PAT-059 CATHRYN SIMPSON posté le oct. 15, 2
+  p03: Updated Topic 5.10 - STP - Software Test Plan CATHRYN SIMPSON posté le oct. 09, 2025 5.10 - STP - Software Tes
+  p04: The NASA Software Engineering and Assurance Handbook (NASA-HDBK-2203) was created to address requests for addi
+  p05: educational or expanded discussions of the ideas covered in the SWE write-up. Also, this section usually inclu
+  p06: NASA TECHNICAL HANDBOOK National Aeronautics and Space Administration Washington, DC 20546-0001 NASA Software 
+  p07: (SWEREF-059) ISO/IEC 19770-5:2015(en) Information technology — IT asset management — Overview and vocabulary I
+  p08: NASA Headquarters NASA Office of the Chief Engineer engineering deviations and waivers website. NASA Headquart
+  p09: The original version of the handbook - addresses the NASA Software Engineering Requirements in NPR 7150.2A. NP
+  p10: 
+
+== Book B. Institutional Requirements.pdf | pages=18 | sha256=6e0438be580d9b40
+  p01: 1. 2. 3. 4. 5. 6. 7. B. Institutional Requirements Added Software Lessons Learned from Psyche Project Report N
+  p02: SWE-040 - Access to Software Products SWE-042 - Source Code Electronic Access SWE-045 - Project Participation 
+  p03: SWE-100 - Software Training Funding SWE-121 - Document Tailored Requirements SWE-125 - Requirements Compliance
+  p04: SWE-199 - Performance Measures SWE-200 - Software Requirements Volatility Metrics SWE-201 - Software Non-Confo
+  p05: a. b. c. d. a. b. c. d. SWE-003 - Center Improvement Plans 2.1.5.2 Center Director, or designee, shall maintai
+  p06: a. b. a. b. SWE-021 - Transition to a Higher Class 2.2.8 If a system or subsystem development evolves to meet 
+  p07: a. b. c. d. e. SWE-039 - Software Supplier Insight 3.1.8 The project manager shall require the software develo
+  p08: SWE-057 - Software Architecture 4.2.3 The project manager shall transform the requirements for the software in
+  p09: 5.1.2 The project manager shall develop a software configuration management plan that describes the functions,
+  p10: 2.1.5.7 For Class A, B, and C software projects, the Center Director, or designee, shall establish and maintai
+  p11: SWE-129 - OCE NPR Appraisals 2.1.1.4 The NASA OCE shall authorize appraisals against selected requirements in 
+  p12: SWE-144 - Software Engineering Process Assets 2.1.5.11 Each Center Director, or designee, shall contribute app
+  p13: 3.11.2 The project manager shall perform a software cybersecurity assessment on the software components per th
+  p14: SWE-193 - Acceptance Testing for Affected System and Software Behavior 4.5.13 The project manager shall develo
+  p15: 2.1.2.3 The NASA Chief, SMA shall periodically benchmark each Center’s software assurance and software safety 
+  p16: SWE-218 - Contracting Officers 2.1.7.1 Contracting Officers, as defined in FAR 2.101, or Agreement Managers as
+  p17: a. b. c. a. b. c. 4.3.9 The crewed space system shall provide the capability for autonomous operation of syste
+  p18: Chapter 2. Responsibilities (cont.) SWE-092 - Using Measurement Data SWE-142 - Software Cost Repositories SWE-
+
+== Book C. Project Software Requirements.pdf | pages=21 | sha256=9e630b204870f418
+  p01: 1. 2. 3. 4. 5. 6. 7. 8. C. Project Software Requirements Added Software Lessons Learned from Psyche Project Re
+  p02: SWE-039 - Software Supplier Insight SWE-040 - Access to Software Products SWE-042 - Source Code Electronic Acc
+  p03: SWE-098 - Agency Process Asset Library SWE-100 - Software Training Funding SWE-121 - Document Tailored Require
+  p04: SWE-196 - Software Retirement Archival SWE-199 - Performance Measures SWE-200 - Software Requirements Volatili
+  p05: a. b. c. d. a. b. c. d. 2.1.1.1 The NASA OCE shall lead and maintain a NASA Software Engineering Initiative to
+  p06: a. b. a. b. 3.5.1 The project manager shall classify each system and subsystem containing software in accordan
+  p07: a. b. c. d. e. SWE-037 - Software Milestones 3.1.7 The project manager shall define and document the milestone
+  p08: SWE-055 - Requirements Validation 4.1.7 The project manager shall perform requirements validation to ensure th
+  p09: SWE-079 - Develop CM Plan 5.1.2 The project manager shall develop a software configuration management plan tha
+  p10: SWE-091 - Establish and Maintain Measurement Repository 2.1.5.7 For Class A, B, and C software projects, the C
+  p11: b. Indicate the Technical Authority or Technical Authorities approval by signature(s) in the Requirements Mapp
+  p12: a. Category 1 Projects as defined in NPR 7120.5. b. Category 2 Projects as defined in NPR 7120.5, that have Cl
+  p13: SWE-156 - Evaluate Systems for Security Risks 3.11.2 The project manager shall perform a software cybersecurit
+  p14: SWE-192 - Software Hazardous Requirements 4.5.12 The project manager shall verify through test the software re
+  p15: 2.1.2.2 The NASA Chief, SMA shall lead and maintain a NASA Software Assurance and Software Safety Initiative t
+  p16: a. Keep a list of all contributors to the software product. b. Ensure that the software product contains appro
+  p17: a. b. c. a. b. c. 4.3.8 The space system shall provide the capability to utilize health and status data (inclu
+  p18: SWE-015 - Cost Estimation SWE-151 - Cost Estimate Conditions SWE-174 - Software Planning Parameters 3.3 Softwa
+  p19: Chapter 4. Software Engineering Life Cycle Requirements 4.1 Software Requirements SWE-050 - Software Requireme
+  p20: Chapter 5. Supporting Software Life Cycle Requirements 5.1 Software Configuration Management (SCM) SWE-079 - D
+  p21: NASA Technical Requirements for Human- Rating (From NASA-STD-8719.29) Class A Software HR-31 - Single Failure 
+
+== Book D. Topics.pdf | pages=4 | sha256=b5c7708b3e4d68e8
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: A. Software Assurance Planning B. Software Assurance Analysis C. Software Assurance Static Analysis Tools D. S
+  p03: 1. 2. 3. 4. - This topic is designed to provide a basic knowledge of the 8.26 - Static Analysis implementation
+  p04: -6.1 - Design for Safety Checklist Lists some key practices for software design, particularly when designing s
+
+== Book E. Tools, References, and Terms.pdf | pages=1 | sha256=d8c352c5b3c03c02
+  p01: E. Tools, References, and Terms Added Software Lessons Learned from Psyche Project Report New in SWEHB - full 
+
+== SWE-002 - Software Engineering Initiative.pdf | pages=11 | sha256=82dccd3c80b9d4cf
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: Inconsistent software engineering practices could emerge among centers and projects. Quality, reliability, and
+  p03: 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. The NASA OCE's leadership in maintaining the Software Engineering Initiative is
+  p04: Reporting progress and compliance to the OCE. Ultimately, the final decision regarding the direction of the in
+  p05: Additional guidance related to this requirement may be found in the following materials in this Handbook: Rela
+  p06: Reference NPR 7150.2 and NASA-STD-8739.8 and scale the application of requirements based on the classification
+  p07: 1. 2. 3. 4. After project completion, capture and document lessons learned to benefit future projects. 4.2 Exa
+  p08: a. b. c. a. b. c. 6. Lessons Learned 6.1 NASA Lessons Learned NASA recognized the critical need for a robust s
+  p09: c. d. e. 1. 2. 3. 4. 5. 6. 7. The SMDP must be rigorously followed and periodically audited. Deviations from t
+  p10: 1. 2. 3. 4. 5. 6. 7.3 Metrics No standard metrics are currently specified. 7.4 Guidance 7.4.1 Objective of Sof
+  p11: 6. 7. 8. 9. 10. 1. 2. 3. Ensure iterative workflow assurances include in-sprint assurance activities (test cas
+
+== SWE-002 - Software Engineering.pdf | pages=11 | sha256=4ffcdc54eb8f3cdf
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: Inconsistent software engineering practices could emerge among centers and projects. Quality, reliability, and
+  p03: 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. The NASA OCE's leadership in maintaining the Software Engineering Initiative is
+  p04: Reporting progress and compliance to the OCE. Ultimately, the final decision regarding the direction of the in
+  p05: Additional guidance related to this requirement may be found in the following materials in this Handbook: Rela
+  p06: Reference NPR 7150.2 and NASA-STD-8739.8 and scale the application of requirements based on the classification
+  p07: 1. 2. 3. 4. After project completion, capture and document lessons learned to benefit future projects. 4.2 Exa
+  p08: a. b. c. a. b. c. 6. Lessons Learned 6.1 NASA Lessons Learned NASA recognized the critical need for a robust s
+  p09: c. d. e. 1. 2. 3. 4. 5. 6. 7. The SMDP must be rigorously followed and periodically audited. Deviations from t
+  p10: 1. 2. 3. 4. 5. 6. 7.3 Metrics No standard metrics are currently specified. 7.4 Guidance 7.4.1 Objective of Sof
+  p11: 6. 7. 8. 9. 10. 1. 2. 3. Ensure iterative workflow assurances include in-sprint assurance activities (test cas
+
+== SWE-003 - Center Improvement Plans.pdf | pages=13 | sha256=5dda5c588569193c
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: This requirement allows the Agency to have insight into each Center's plans for maintaining in-house software 
+  p03: 1. 2. 3. 4. NASA’s lessons learned (e.g., from the Lessons Learned Information System) emphasize that sustaine
+  p04: 1. 2. 3. 4. 5. This guidance is intended to clarify the expectations for continuously improving software engin
+  p05: 1. 2. 3. Regularly review the status of improvement efforts and ensure they align with the Center’s goals.Moni
+  p06: See also for the requirement on the Software Engineering Initiative. SWE-002 - Software Engineering Initiative
+  p07: 1. 2. 3. 1. 2. Actions: Define a short and concise written approach that addresses: Specific goals for improvi
+  p08: 1. 2. 3. Reliability of safety-critical or mission-critical components. Requirements validation, code quality,
+  p09: 6. Lessons Learned 6.1 NASA Lessons Learned The following Lessons Learned, derived from the , are directly app
+  p10: 1. 2. The highlighted that deficiencies in workforce expertise, inadequate knowledge transfer, Summary: Columb
+  p11: 1. 2. 3. The Goddard Space Flight Center (GSFC) contains the following lessons learned related to software req
+  p12: 3. 4. 1. 2. 3. 4. 1. 2. 3. 4. 1. 2. 3. 4. 1. 2. 3. 4. 5. Analyze and verify that the plan aligns with NASA sta
+  p13: 5. 1. 2. 3. 4. 5. :Risk Management Monitor the implementation of assurance activities that address safety-crit
+
+== SWE-004 - OCE Benchmarking.pdf | pages=13 | sha256=1b666ee95da8e0c1
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: SWE-004 specifies that the NASA Office of the Chief Engineer (OCE) must periodically benchmark each NASA Cente
+  p03: 1. 2. 3. 1. 2. 3. 4. 7. Minimizing Risk in Inter-Center and Interdisciplinary Collaboration Many NASA missions
+  p04: 4. 5. 6. 7. 8. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. Review of Organizational and Project-Level Artifacts: Assess pla
+  p05: 1. 2. 3. 3.3.2 Benefits of CMMI to NASA Best Practices Alignment: Measures the alignment of Center practices w
+  p06: 1. 2. 3. 4. 1. 2. 3. 4. See the following link(s) in SPAN for process assets from contributing Centers (NASA O
+  p07: 4. 5. 6. 1. 2. 3. 1. 2. 3. For small projects with safety-critical components, ensure these practices are in p
+  p08: 3. 4. Document only software risks that are directly tied to mission success or safety. :Ongoing Training Use 
+  p09: 0740Lesson Number: :Summary The loss of the Mars Climate Orbiter (MCO) highlighted critical failures in softwa
+  p10: A lack of independent software process evaluation resulted in project teams underestimating technical risks as
+  p11: 1. 2. 3. 1. 2. Include assessments of software engineering training programs during benchmarking to verify tha
+  p12: 2. a. b. c. d. e. 3. 4. 5. 6. 1. 2. 3. 4. 5. Provide Input on Assessing Key Assurance Areas Software assurance
+  p13: 7.5 Additional Guidance Additional guidance related to this requirement may be found in the following material
+
+== SWE-005 - Software Processes.pdf | pages=13 | sha256=889da98e3945a088
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: Enable seamless multi-Center software development for NASA projects. Ensure quick and effective mobility of as
+  p03: 1. 2. 3. 4. This requirement protects human lives during manned space missions (e.g., Artemis) and ensures the
+  p04: (LLIS Number: 1489): Emphasizes the long-term cost and quality benefits of Software Process Improvement Result
+  p05: 1. 2. 3. 1. 2. 3. 4. 5. 6. Document and maintain clear records of each version of the process. Ensure processe
+  p06: 1. 2. 3. 4. 1. To fulfill this requirement, Centers should: Establish SEPGs and PALs: Ensure their SEPG is wel
+  p07: 2. 3. 4. Maintain a lightweight but complete set of documentation for processes that supports traceability and
+  p08: 1. 2. 3. 1. 2. 3. 4. 1. 2. Use lessons learned: Capture feedback after key milestones (e.g., design reviews, i
+  p09: (SWEREF-041) NASA Systems Engineering Processes and Requirements Updated w/Change 2 NPR 7123.1D, Office of the
+  p10: 1. 2. 3. 4. 5. 6. 7. The NASA Software Engineering Improvement Initiative (NSEII) (see SWE-002 - Software Engi
+  p11: 7. 8. 9. 1. 2. Use checklists to assess the clarity, feasibility, and completeness of requirements. :Actionabl
+  p12: 1. 2. 3. 1. 2. 3. 1. 2. 3. From NASA-STD-8739.8B None identified at this time. 7.2 Software Assurance Products
+  p13: 1. 2. 3. 1. 2. 1. 2. 3. 4. 5. 1. 2. 3. 4. 7.4.2.4 Maintain and Continuously Improve Software Processes Monitor
+
+== SWE-006 - Center Software Invent_8aa7bb645c624d3e971d74dd2cf63a81-151126-1205-22.pdf | pages=12 | sha256=c5010755f92fff16
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: B 2.1.3.8 Center Directors, or designees, shall maintain a reliable list of their Center's programs and projec
+  p03: D 2.1.5.6 Center Director, or designee, shall maintain a reliable list of their Center’s programs and projects
+  p04: 1. 2. 3. Inventory information aids in determining trends associated with software risks, safety-criticality, 
+  p05: 3. 4. a. i. ii. iii. iv. v. 5. 6. 1. 2. 3. 4. 5. 6. Use a standardized code counting tool to measure actual So
+  p06: needed for strategic decision-making at both Center and Agency levels.Provide real-time and reliable data by e
+  p07: Small projects are less likely to be safety-critical unless they are directly linked to safety-critical system
+  p08: 4.2 Conclusion This small project guidance streamlines compliance with the software inventory requirement by b
+  p09: Lesson Learned ID: 0938 Key Issue: The Mars Climate Orbiter mission failed due to mismatched units in the navi
+  p10: 1. 2. 3. Properly structured inventories that include life cycle methodologies (e.g., Agile, Waterfall) and th
+  p11: 1. 2. 3. 4. 1. 2. 3. 1. a. i. ii. b. c. d. 2. a. b. 3. a. i. ii. iii. iv. v. No standard metrics are currently
+  p12: 3. a. v. vi. 1. 2. 3. 1. 2. 3. 4. Confirm that the life cycle methodology (“waterfall,” “agile,” “spiral,” etc
+
+== SWE-013 - Software Plans_e6fb373d4621487baa52a90a7f9a123d-151126-1205-24.pdf | pages=24 | sha256=4468132ec4af6651
+  p01: Web Resources View this section on the website See edit history of this section Post feedback on this section 
+  p02: 2. Rationale Because software development is a complex technical process that requires a lot of steps, having 
+  p03: 2.5 Promoting Risk Management and Hazard Mitigation :Why It Matters Aerospace software systems involve signifi
+  p04: 1. 2. 3. 4. 5. 6. Software plans describe the activities and processes that will be carried out and the produc
+  p05: Regulatory changes. Changes in stakeholder commitments. CMMI for Development, Version 1.3: Improving processes
+  p06: 1. 2. 3. 3.6 Center Process Asset Libraries See the following link(s) in SPAN for process assets from contribu
+  p07: 1. 2. 3. 4. 1. 2. 3. 1. 2. 3. Purpose: Define how security will be embedded across the life cycle. Key Compone
+  p08: 1. 2. 3. 1. 2. 3. Security planning must be a top priority, even for small projects, and it should be baked in
+  p09: 3. Update plans to reflect lessons learned or minor changes. Finalize documentation for post-project handoff o
+  p10: Lesson Learned: The software development plan must address all phases of the software life cycle—from requirem
+  p11: Incident: Tailoring plans to meet specific mission requirements is critical for success, as demonstrated by mi
+  p12: Contributing Factors: Divergent interpretations of shared accountability and insight across organizations. Lac
+  p13: Use industry standard practice: (e.g., GitLab) to current versions for inphase feedback and Lesson Learned: IV
+  p14: Sustainmentonly funding; late tool development; adhoc admin.Cause(s): Conduct ; fund capability expansion; emb
+  p15: project. If there are more than one or two organizations with separate configuration management systems betwee
+  p16: 1. 2. 3. 4. To track, analyze, and address risks in both planning and execution phases, ensuring they are mana
+  p17: : Percentage of required software plans developed and approved.Definition : [ \text{Plan Completeness} = \left
+  p18: 7.3.4 Metrics for Security Planning and Execution Metric 10: Security Plan Coverage : Percentage of required s
+  p19: 1. 2. 3. 4. 1. Audit Coverage 100% 95% See also Topic 8.18 - SA Suggested Metrics 7.4 Guidance Here is the , i
+  p20: 1. 2. 3. 4. 1. 2. 3. 4. 5. 6. 1. 2. 3. Use Section as a reference to define the contents of the SAP. 8.51 – So
+  p21: 3. 4. 1. 2. 3. 4. The SAP must explicitly define which personnel or groups (NASA, contractor, or center person
+  p22: Defines processes, timelines, deliverables, and resources. Software Development or Management Plan (SDP/SMP): 
+  p23: Security and safety testing outcomes. Defect tracking logs. 8.3.4 Configuration Management Records Evidence of
+  p24: 8.6.1 Training and Personnel Documentation Evidence that personnel performing software assurance activities (b

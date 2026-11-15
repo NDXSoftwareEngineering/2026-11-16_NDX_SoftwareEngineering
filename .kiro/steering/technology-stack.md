@@ -4,16 +4,26 @@ inclusion: always
 
 # Technology Stack
 
-Baseline version: 1.3 (2026-11-16). Status: APPROVED by the user. v1.0 approved 2026-11-16 (DEC-001); decisions DEC-002 to DEC-008 applied in v1.2; v1.1 NASA and SWEBOK references and NASA applicability approved in v1.3 (DEC-009). Decisions: `docs/00-governance/decision-log.md`.
+Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 ## 1. Change Policy
 
 The agreed stack is: Windows 11, Kiro, Python 3.12, Django, Django Ninja, React, Vite, PostgreSQL 17, pytest, Playwright, Git, GitHub.
 
-Approved additions (see `docs/00-governance/decision-log.md`):
-- Vitest for frontend unit tests (DEC-003).
-- Hurl for Windows, run from PowerShell (DEC-004).
-- Ruff, ESLint, Prettier, pip-audit, and Python `venv` + `pip` (DEC-005).
+Stack status (Quality Gate S1, SG-02). Evidence IDs refer to `docs/00-governance/decision-log.md` §1.
+
+| Item | Role | Status | Evidence |
+| --- | --- | --- | --- |
+| Windows 11, Kiro, Python 3.12, Django, Django Ninja, React, Vite, PostgreSQL 17, pytest, Playwright, Git, GitHub | Original agreed stack | AGREED (defined by the user in the original task) | User task statement |
+| Vitest | Frontend unit tests | APPROVED (DEC-003) | E-02 |
+| Hurl for Windows, run from PowerShell | RealWorld API conformance suite | APPROVED (DEC-004) | E-02 |
+| Ruff, ESLint, Prettier, pip-audit | Static analysis, formatting, Python dependency audit | APPROVED (DEC-005) | E-02 |
+| Python `venv` + `pip`, pinned requirements file | Python dependency management | APPROVED (DEC-005) | E-02 |
+| Git submodule for the RealWorld reference | Reference baseline | APPROVED (DEC-006 b); path and commit PROPOSED (DEC-012) | E-02 |
+| Node.js runtime, npm, `package-lock.json`, `npm audit` | Frontend toolchain prerequisite | PROPOSED (DEC-013) | None |
+| pytest Django integration plugin | Backend test integration | Not yet proposed; Phase 2 decision | None |
+| JavaScript or TypeScript, router, Markdown renderer, JWT library, HTTP client | Application libraries | Not yet proposed; Phase 2 decisions | None |
+| Python 3.14 with pypdf 5.1.0 | Reading reference PDFs only; not part of the product stack | Installed by the user; usage recorded for SWE-136 (reduced) | User statement E-01 ("Tôi đã cài pypdf cho bạn") |
 
 - Do not add, replace, or remove a framework, library category, tool, or infrastructure component without explicit user approval recorded as a decision record (`DEC-NNN`).
 - Small libraries needed to implement an approved design (for example a JWT library or a Markdown renderer) are proposed in the Design phase with a decision record. They are not added ad hoc during construction.
@@ -77,15 +87,15 @@ Rules:
 - Git, hosted on GitHub. One repository (monorepo) holds backend, frontend, and documentation (DEC-006 a). GitHub repository: `2026-11-16_NDX_SoftwareEngineering`, public (DEC-006 c).
 - Branching [RECOMMENDATION]: `main` always releasable; short-lived feature branches named `<type>/<id>-<slug>` (for example `feat/FR-ART-003-create-article`); merge after checks pass.
 - Commits [RECOMMENDATION]: Conventional Commits style (`feat:`, `fix:`, `docs:`, `test:`, `chore:`) with requirement or issue IDs in the message.
-- The RealWorld reference is a Git submodule of `https://github.com/realworld-apps/realworld`, pinned to a recorded commit (DEC-006 b). It stays unmodified. Before replacing the downloaded `realworld-main/` folder, compare `specs/` file hashes and report differences.
-- Do not commit `swebok-v4.pdf` (IEEE copyright) or `_archive/` (DEC-008). NASA reference PDFs are committed.
+- The RealWorld reference is a Git submodule of `https://github.com/realworld-apps/realworld`, pinned to a recorded commit (DEC-006 b, APPROVED). Path `realworld-main/` and commit `25588846` are PROPOSED (DEC-012). It stays unmodified. Before replacing the downloaded `realworld-main/` folder, compare `specs/` file hashes and report differences.
+- Do not commit `swebok-v4.pdf` (IEEE copyright) or `_archive/` (DEC-008, APPROVED). NASA reference PDFs are committed. The other `.gitignore` and `.gitattributes` rules are PROPOSED (DEC-011).
 - Never commit secrets, `.env` files, virtual environments, `node_modules`, build output, or test reports containing credentials.
 
 ## 8. Testing Tools
 
 | Level | Tool | Status |
 | --- | --- | --- |
-| Backend unit and integration | pytest (with a Django integration plugin, chosen in Phase 2) | Agreed |
+| Backend unit and integration | pytest; a Django integration plugin is a Phase 2 decision (not yet proposed) | pytest: Agreed |
 | API conformance | RealWorld Hurl suite (`realworld-main/specs/api/hurl/`) run by Hurl for Windows | Approved (DEC-004); not yet installed |
 | Frontend E2E | Playwright with the RealWorld suite (`realworld-main/specs/e2e/`) | Agreed |
 | Frontend unit | Vitest | Approved (DEC-003) |
@@ -102,9 +112,9 @@ Notes:
 ## 10. Dependency Management
 
 - Backend: Python built-in `venv` plus `pip`, with pinned versions in a committed requirements file (DEC-005). No additional tool (Poetry, uv, pipenv) without approval.
-- Frontend: `npm` with a committed `package-lock.json`.
+- Frontend [PROPOSED, DEC-013]: Node.js with `npm` and a committed `package-lock.json`.
 - Add a dependency only when an approved design needs it; record why in the decision record or design. Open-source components are evaluated before adoption (licence, maintenance status, known vulnerabilities), in the spirit of NPR 7150.2D SWE-027.
-- Check new and existing dependencies for known vulnerabilities before each gate from QG3 onward with `pip-audit` (DEC-005) and `npm audit`.
+- Check new and existing dependencies for known vulnerabilities before each gate from QG3 onward with `pip-audit` (DEC-005, APPROVED) and `npm audit` (DEC-013, PROPOSED).
 - Note: the RealWorld repository itself uses `bun` for its own docs tooling. That convention applies only to that repository and is not part of this project's stack.
 
 ## 11. Coding Conventions
@@ -127,6 +137,7 @@ JavaScript/React:
 
 - Django, Django Ninja, React, Vite, Playwright, Vitest, Hurl, Ruff, ESLint, Prettier, and pip-audit versions.
 - JavaScript or TypeScript for the frontend.
+- Node.js and npm (DEC-013, PROPOSED; can be decided before Phase 2).
 - JWT library, Markdown renderer, router library, HTTP client approach.
 - Ports and local URLs (ISS-002).
 - Deployment target and method (Phase 5 approach decided in Phase 2).

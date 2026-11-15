@@ -1,0 +1,42 @@
+RealWorld integrity check - run at 2026-11-16T03:29:56
+git version: git version 2.56.1.windows.1
+$ git submodule status
+25588846c314b15a5e427ffe816e6b4af7be68c7 realworld-main (heads/main)
+$ git ls-tree HEAD realworld-main   (commit recorded in superproject)
+160000 commit 25588846c314b15a5e427ffe816e6b4af7be68c7	realworld-main
+$ git -C realworld-main rev-parse HEAD
+25588846c314b15a5e427ffe816e6b4af7be68c7
+$ git -C realworld-main status --porcelain   (empty = no local modifications)
+<empty>
+$ git -C realworld-main fsck --no-dangling
+<no errors reported>
+$ git config -f .gitmodules --list
+submodule.realworld-main.path=realworld-main
+submodule.realworld-main.url=https://github.com/realworld-apps/realworld
+Upstream tree files at pinned commit: 337
+Submodule working files matching committed blobs (raw bytes): 68 / 337
+Working files differing from committed blobs (raw bytes): ['.github/CODEOWNERS', '.github/ISSUE_TEMPLATE/BUG_REPORT.yml', '.github/ISSUE_TEMPLATE/FEATURE_REQUEST.yml', '.github/dependabot.yml', '.github/workflows/bruno-check.yml', '.github/workflows/codeql.yml', '.github/workflows/deploy-docs.yml', '.github/workflows/spammy-guardian.yml', '.gitignore', 'CLAUDE.md', 'CONTRIBUTING.md', 'LICENSE', 'Makefile', 'README.md', 'assets/generator/generate_assets.py', 'assets/generator/logo_parts.json', 'assets/media/conduit-logo.svg', 'assets/media/conduit-logo.svg.generate.ts', 'assets/media/default-avatar.svg', 'assets/media/frameworks-black.svg']
+Archive files: 338 (compared, excluding .docx: 337)
+Archive files identical to pinned commit: 337
+Only in archive: none
+Only upstream: none
+Files under specs/: 201
+openapi.yml lines 1-11:
+openapi: 3.1.0
+info:
+  title: RealWorld Conduit API
+  description: Conduit API documentation
+  contact:
+    name: RealWorld
+    url: https://realworld-docs.netlify.app/
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  version: 2.0.0
+docx present: True, size=115629 bytes, sha256=530c82bba8f441df1824661800324929e8e36f525ec9d8396b6896ab4c483892
+
+Line-ending analysis of submodule working files (2026-11-16):
+core.autocrlf origin: file:E:/2026-11-16 Cai PM o day/2026-11-16 Git/Git/etc/gitconfig	true
+identical raw bytes: 68
+identical after CRLF->LF normalization: 269
+other differences: 0 []

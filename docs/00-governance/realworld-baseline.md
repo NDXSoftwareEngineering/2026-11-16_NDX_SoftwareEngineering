@@ -1,6 +1,6 @@
 # RealWorld Reference Baseline
 
-Date: 2026-11-16. Related: ISS-001, DEC-006 (b), DEC-008.
+Date: 2026-11-16. Related: ISS-001, DEC-006 (b), DEC-008, DEC-012 (PROPOSED). Document status: READY FOR REVIEW.
 
 ## Baseline
 
@@ -29,6 +29,24 @@ Result (from script output on 2026-11-16):
 | Of which under `specs/` | 201 |
 
 Conclusion: the downloaded copy is identical to upstream commit `25588846`. Everything inspected during governance setup applies to the pinned submodule. ISS-001 is resolved.
+
+## Re-verification for Quality Gate S1 (2026-11-16)
+
+Raw output: `docs/00-governance/evidence/realworld-integrity-2026-11-16.txt`.
+
+| Check | Result |
+| --- | --- |
+| Commit recorded in the superproject (`git ls-tree HEAD realworld-main`) | `25588846c314b15a5e427ffe816e6b4af7be68c7` |
+| Submodule HEAD | `25588846c314b15a5e427ffe816e6b4af7be68c7` |
+| `.gitmodules` URL | `https://github.com/realworld-apps/realworld` |
+| Local modifications (`git -C realworld-main status --porcelain`) | none |
+| `git -C realworld-main fsck --no-dangling` | no errors reported |
+| Archive copy vs pinned commit | 337 / 337 identical, 0 only-local, 0 only-upstream |
+| Submodule working files vs committed blobs | 68 identical as raw bytes; 269 identical after converting CRLF to LF; 0 other differences |
+
+Observation: the submodule working files have CRLF line endings because Git for Windows sets `core.autocrlf=true` in its system configuration (`E:/2026-11-16 Cai PM o day/2026-11-16 Git/Git/etc/gitconfig`). Content is otherwise identical to the pinned commit. This matters if a tool compares raw bytes or if a test depends on line endings; it does not change the specification.
+
+The choice of submodule path and commit is recorded as DEC-012 (PROPOSED).
 
 ## File not in the upstream repository
 
