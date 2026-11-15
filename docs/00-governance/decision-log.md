@@ -4,6 +4,7 @@ Project: Software Engineering Practice with RealWorld Conduit
 Record format: `.kiro/steering/engineering-process.md` §4. Statuses: `engineering-process.md` §2.
 Approver for all decisions: the user (project owner). Kiro never records approval without an entry in the evidence register (§1).
 Log revision: 2 (2026-11-16, Quality Gate S1 corrections SG-01/SG-02). Revision 1 marked several agent-proposed items as approved; those items are now separated and marked PROPOSED or PENDING USER APPROVAL.
+Log revision: 3 (2026-11-16). Records the user's Quality Gate S1 decision (evidence E-09): DEC-011 to DEC-014 approved; steering v1.4 approved.
 
 ## 1. Approval Evidence Register
 
@@ -21,6 +22,7 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | E-06 | "Xác nhận các lựa chọn tôi tự đưa ra khi làm DEC-008: để bản tải về trong _archive/, không commit file .docx, đã commit file ghi chú. tôi xác nhận" | Kiro's request to confirm three listed DEC-008 implementation choices | Explicit for the three listed items only |
 | E-07 | "Bài tập tùy chọn: không làm 2 bài tập đó ngay." | Kiro's question whether to do the SWE-020 and SWE-125 exercises | Explicit |
 | E-08 | "Chấp nhận phần bổ sung v1.1, với giới hạn đã nêu ở mục 1. Chấp nhận danh sách "không áp dụng" gồm SWE-032, SWE-070, IV&V (SWE-141 và các yêu cầu liên quan) và SWE-023/134/184/192. Chuyển SWE-136 sang "áp dụng rút gọn", và thêm ghi chú về SWE-143. Tôi chấp nhận" | Kiro's three proposals on v1.1 references and NASA applicability | Explicit |
+| E-09 | "1. Chấp nhận 2. Xác nhận. 3. Duyệt cả 3. 4. Có. 5. Tôi không có nội dung gì" | Kiro's five Quality Gate S1 decision items: (1) accept S1, (2) confirm the evidence register E-01 to E-08, (3) approve DEC-011, DEC-012, DEC-013, (4) DEC-014 maintenance yes/no, (5) content of SG-06 | Explicit for all five items |
 
 ## 2. Decision Index
 
@@ -36,10 +38,10 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | DEC-008 | Repository initialization and published content | APPROVED | User | 2026-11-16 | E-03, E-06; push: E-04 (implied) |
 | DEC-009 | Steering v1.1 references and NASA applicability | APPROVED | User | 2026-11-16 | E-08 |
 | DEC-010 | Defer SWE-020 and SWE-125 learning exercises | APPROVED | User | 2026-11-16 | E-07 |
-| DEC-011 | `.gitattributes` and `.gitignore` contents | PROPOSED | — | 2026-11-16 | None |
-| DEC-012 | Submodule path and pinned commit | PROPOSED | — | 2026-11-16 | None |
-| DEC-013 | Node.js runtime and npm for the frontend | PROPOSED | — | 2026-11-16 | None |
-| DEC-014 | Post-project maintenance of the implementation | PENDING USER APPROVAL | — | — | E-05 ambiguous |
+| DEC-011 | `.gitattributes` and `.gitignore` contents | APPROVED | User | 2026-11-16 | E-09 |
+| DEC-012 | Submodule path and pinned commit | APPROVED | User | 2026-11-16 | E-09 |
+| DEC-013 | Node.js runtime and npm for the frontend | APPROVED | User | 2026-11-16 | E-09 |
+| DEC-014 | Post-project maintenance of the implementation: yes | APPROVED | User | 2026-11-16 | E-09 (E-05 was ambiguous) |
 
 DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1), or were stated in the steering files as rules without approval (DEC-013).
 
@@ -89,7 +91,7 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Options: Ruff, ESLint, Prettier, pip-audit, venv + pip; alternatives such as flake8/black, Poetry, or uv.
 - Decision: Adopt Ruff (Python lint and format), ESLint (JavaScript lint), Prettier (frontend format), pip-audit (Python dependency vulnerability scan), and Python `venv` + `pip` with a pinned requirements file.
 - Rationale: Few tools, standard for each ecosystem, no extra package manager.
-- Consequences: Stack additions. Versions pinned in Phase 2/3. Poetry, uv, and pipenv are not used. `npm audit` depends on DEC-013 (PROPOSED).
+- Consequences: Stack additions. Versions pinned in Phase 2/3. Poetry, uv, and pipenv are not used. `npm audit` is covered by DEC-013 (APPROVED, E-09).
 - Status: APPROVED. Evidence: E-02 (item 5).
 
 ### DEC-006: Repository layout
@@ -100,7 +102,7 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
   - (b) The RealWorld reference is a Git submodule of `https://github.com/realworld-apps/realworld`, pinned to a specific commit. Evidence: E-02.
   - (c) GitHub repository `2026-11-16_NDX_SoftwareEngineering`, public. Evidence: E-03.
 - Rationale: (a) simpler traceability for one developer; (b) records the exact upstream commit, resolving ISS-001.
-- Consequences: The submodule path and the commit chosen are implementation choices recorded separately in DEC-012 (PROPOSED).
+- Consequences: The submodule path and the commit chosen are implementation choices recorded separately in DEC-012 (APPROVED, E-09).
 - Status: APPROVED. Evidence: E-02 (item 6 a, b), E-03 (6 c).
 
 ### DEC-007: RealWorld ecosystem expectations
@@ -126,7 +128,7 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
   - `RealWorld apps Documentation.docx` is not committed.
   - The note `2026-11-15 at 11.39.44 Note.txt` is committed.
 - Action: Kiro pushed `main` to `origin` on 2026-11-16 after the user created the repository and gave the account name (evidence E-04, implied instruction; observation OBS-S1-03).
-- Not covered by E-06: `.gitattributes` and `.gitignore` contents (now DEC-011, PROPOSED).
+- Not covered by E-06: `.gitattributes` and `.gitignore` contents (now DEC-011, APPROVED with evidence E-09).
 - Status: APPROVED. Evidence: E-03, E-06; push E-04.
 
 ### DEC-009: Steering v1.1 references and NASA applicability
@@ -150,26 +152,28 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Context: Created by Kiro at repository initialization (commit `0a54008`). Only the exclusion of `swebok-v4.pdf` (E-03) and of `_archive/` (E-06) has user evidence.
 - Proposal: Keep `.gitattributes` (text normalized to LF in the repository; `*.ps1` checked out with CRLF; PDF, DOCX, PNG as binary) and the `.gitignore` patterns for secrets (`.env`, `.env.*` except `.env.example`), Python and Node build artifacts, test reports, and OS/editor files (`Thumbs.db`, `Desktop.ini`, `.DS_Store`, `.vscode/`).
 - Rationale: Prevents committing secrets and generated files; gives consistent line endings on Windows.
-- Status: PROPOSED. Awaiting user approval.
+- Status: APPROVED. Evidence: E-09 (item 3).
 
 ### DEC-012: Submodule path and pinned commit
 
 - Context: DEC-006 (b) approved a pinned submodule but not its path or commit.
 - Proposal: Path `realworld-main/` (keeps existing references valid); pinned commit `25588846c314b15a5e427ffe816e6b4af7be68c7` (upstream HEAD on 2026-11-16, identical to the downloaded copy that was inspected; see `realworld-baseline.md`).
-- Status: PROPOSED. Awaiting user approval.
+- Status: APPROVED. Evidence: E-09 (item 3).
 
 ### DEC-013: Node.js runtime and npm for the frontend
 
 - Context: Vite, React, Vitest, ESLint, Prettier, and Playwright run on Node.js, but Node.js and a package manager are not named in the agreed stack. Steering v1.3 stated "Frontend: `npm` with a committed `package-lock.json`" as a rule without approval.
 - Proposal: Use the installed Node.js (observed v24.22.3) with npm and a committed `package-lock.json`; use `npm audit` for dependency scanning. Exact Node.js version recorded in Phase 2.
 - Alternatives: pnpm, Yarn, or Bun (each would add a tool).
-- Status: PROPOSED. Awaiting user approval.
+- Status: APPROVED. Evidence: E-09 (item 3).
 
 ### DEC-014: Post-project maintenance of the implementation
 
 - Context: RealWorld `expectations.md` asks implementers to keep implementations up to date. Evidence E-05 repeats the question form and does not state a choice.
 - Options: Yes, maintain after QG5; No, the repository is frozen after QG5.
-- Status: PENDING USER APPROVAL.
+- Decision: Yes. The implementation is kept up to date after QG5.
+- Consequences: Maintenance scope and frequency are not yet defined. They are to be planned in Phase 5 (NPR 7150.2D SWE-075 operations and maintenance planning, as mapped in `engineering-process.md` §11). A steering change for this will be proposed when Phase 5 is planned.
+- Status: APPROVED. Evidence: E-09 (item 4).
 
 ## 4. Steering Approval History
 
@@ -179,10 +183,11 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 | 1.1 | NASA and SWEBOK references, ISS-007 to ISS-009 | Content APPROVED | E-08 (DEC-009) |
 | 1.2 | Text edits applying DEC-002 to DEC-008 | Decisions approved; the edited text itself was not reviewed by the user | E-02, E-03, E-06 cover decisions only |
 | 1.3 | Text edits applying DEC-009 and DEC-010; status line "APPROVED by the user" | Decisions approved; edited text not reviewed. The status line overstated approval (SG-05). | E-07, E-08 cover decisions only |
-| 1.4 | Quality Gate S1 corrections (SG-01 to SG-05) | READY FOR REVIEW | — |
+| 1.4 | Quality Gate S1 corrections (SG-01 to SG-05) | APPROVED with Quality Gate S1 acceptance | E-09 (item 1) |
+| 1.4, status update | After E-09, only status words and evidence IDs were changed to record DEC-011 to DEC-014 and ISS-010; no other text changed. Commit message: "docs: record Quality Gate S1 acceptance (E-09)". | Administrative record of E-09 | E-09 |
 
 ## 5. Open Points
 
-1. DEC-011, DEC-012, DEC-013: PROPOSED, need approval or rejection.
-2. DEC-014: PENDING USER APPROVAL.
-3. Quality Gate S1 acceptance, including confirmation of the evidence register (§1): see `docs/00-governance/qg-s1-review-package.md`.
+1. None of DEC-001 to DEC-014 is open.
+2. Quality Gate S1: ACCEPTED by the user on 2026-11-16 (E-09). Gate record: `docs/00-governance/qg-s1-review-package.md` §7.
+3. Issues carried forward with the S1 acceptance: ISS-002, ISS-003, ISS-004, ISS-007, ISS-008, ISS-009 (`requirements-and-sources.md` §8).

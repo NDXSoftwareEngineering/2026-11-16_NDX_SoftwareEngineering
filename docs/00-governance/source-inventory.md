@@ -1,6 +1,6 @@
 # Source Inventory and Verification Report
 
-Quality Gate S1, finding SG-03 and SG-04. Date: 2026-11-16. Document status: READY FOR REVIEW.
+Quality Gate S1, finding SG-03 and SG-04. Date: 2026-11-16. Document status: APPROVED with Quality Gate S1 (E-09).
 Performed by Kiro (self-check, not independent verification).
 
 Status values used:
@@ -137,8 +137,8 @@ From `docs/00-governance/evidence/cross-reference-check-2026-11-16.txt`:
 | --- | --- | --- |
 | Every DEC ID referenced in the five steering files and `realworld-baseline.md` has a record in `decision-log.md` | VERIFIED | 0 undefined references |
 | Every evidence ID (E-NN) used is defined in the evidence register | VERIFIED | 0 undefined |
-| Decision statuses in the index match the records | VERIFIED by reading | DEC-001 to DEC-010 APPROVED; DEC-011 to DEC-013 PROPOSED; DEC-014 PENDING USER APPROVAL |
-| Evidence quotes match the chat session | NOT CHECKED independently | Transcribed by Kiro; the transcript is not stored in the repository (ISS-010) |
+| Decision statuses in the index match the records | VERIFIED by reading | At S1 submission: DEC-001 to DEC-010 APPROVED, DEC-011 to DEC-013 PROPOSED, DEC-014 PENDING. After the S1 decision (E-09): all APPROVED. |
+| Evidence quotes match the chat session | NOT CHECKED independently | Transcribed by Kiro; the transcript is not stored in the repository. The user confirmed the register (E-09, item 2); ISS-010 closed. |
 
 ## 5. Reference File Hashes (SHA-256)
 

@@ -4,7 +4,7 @@ inclusion: always
 
 # Project Overview: Software Engineering Practice with RealWorld Conduit
 
-Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
+Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 Companion steering files: `engineering-process.md`, `requirements-and-sources.md`, `technology-stack.md`, `quality-assurance.md`. If these files disagree, stop and report the conflict; do not pick one silently.
 
 ## 1. Purpose
@@ -77,7 +77,7 @@ Independence note: Kiro reviewing its own work is a self-check. It is not indepe
 | Frontend / E2E testing | Playwright |
 | Version control | Git, GitHub |
 
-Approved additions (evidence E-02): Vitest (frontend unit tests, DEC-003); Hurl for Windows (API conformance, DEC-004); Ruff, ESLint, Prettier, pip-audit, `venv` + `pip` (DEC-005). Proposed, not approved: Node.js and npm as the frontend toolchain (DEC-013). Full status table: `technology-stack.md` §1. Decisions and evidence: `docs/00-governance/decision-log.md`.
+Approved additions (evidence E-02): Vitest (frontend unit tests, DEC-003); Hurl for Windows (API conformance, DEC-004); Ruff, ESLint, Prettier, pip-audit, `venv` + `pip` (DEC-005). Also approved (evidence E-09): Node.js and npm as the frontend toolchain (DEC-013). Full status table: `technology-stack.md` §1. Decisions and evidence: `docs/00-governance/decision-log.md`.
 
 Initial development runs directly on Windows. Docker and WSL2 are deferred. Details and change rules are in `technology-stack.md`.
 
@@ -116,7 +116,7 @@ Phases run strictly in order. Each ends with a quality gate that the user must e
 
 Each assumption must be confirmed or replaced as the project progresses.
 
-- A-01: VERIFIED by hash comparison (a fact check, not a user decision). The downloaded RealWorld copy that was inspected is identical to upstream commit `25588846` (2026-11-02), now the `realworld-main/` submodule (`docs/00-governance/realworld-baseline.md`). Using this commit as the pinned baseline is PROPOSED (DEC-012).
+- A-01: VERIFIED by hash comparison (a fact check, not a user decision). The downloaded RealWorld copy that was inspected is identical to upstream commit `25588846` (2026-11-02), now the `realworld-main/` submodule (`docs/00-governance/realworld-baseline.md`). Using this commit as the pinned baseline is APPROVED (DEC-012, evidence E-09).
 - A-02: The user is the single approver for all gates and changes.
 - A-03: The new workspace `E:\2026-11-16-SoftwareEngineering` replaces the OneDrive project folder named in the 2026-11-15 note.
 - A-04: The deployment target is not yet defined. It is decided in the Design phase and confirmed before Phase 5.

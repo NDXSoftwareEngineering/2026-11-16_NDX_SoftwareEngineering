@@ -4,7 +4,7 @@ inclusion: always
 
 # Engineering Process: Mandatory Five-Phase Lifecycle
 
-Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
+Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 Methodology references: NPR 7150.2D (software engineering requirements and lifecycle activities), NASA-STD-8739.8B (software assurance, safety, IV&V), NASA Software Engineering Handbook (implementation guidance), SWEBOK Guide V4 (knowledge areas). These guide how work is done. They never add product requirements.
 

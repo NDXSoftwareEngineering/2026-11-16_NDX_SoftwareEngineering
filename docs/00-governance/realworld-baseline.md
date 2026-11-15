@@ -1,6 +1,6 @@
 # RealWorld Reference Baseline
 
-Date: 2026-11-16. Related: ISS-001, DEC-006 (b), DEC-008, DEC-012 (PROPOSED). Document status: READY FOR REVIEW.
+Date: 2026-11-16. Related: ISS-001, DEC-006 (b), DEC-008, DEC-012 (APPROVED, E-09). Document status: APPROVED with Quality Gate S1 (E-09).
 
 ## Baseline
 
@@ -46,7 +46,7 @@ Raw output: `docs/00-governance/evidence/realworld-integrity-2026-11-16.txt`.
 
 Observation: the submodule working files have CRLF line endings because Git for Windows sets `core.autocrlf=true` in its system configuration (`E:/2026-11-16 Cai PM o day/2026-11-16 Git/Git/etc/gitconfig`). Content is otherwise identical to the pinned commit. This matters if a tool compares raw bytes or if a test depends on line endings; it does not change the specification.
 
-The choice of submodule path and commit is recorded as DEC-012 (PROPOSED).
+The choice of submodule path and commit is recorded as DEC-012 (APPROVED, E-09).
 
 ## File not in the upstream repository
 

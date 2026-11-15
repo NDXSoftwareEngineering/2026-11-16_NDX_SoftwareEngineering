@@ -4,7 +4,7 @@ inclusion: always
 
 # Requirements and Sources
 
-Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
+Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 ## 1. Source Hierarchy
 
@@ -119,13 +119,13 @@ When a source is missing, ambiguous, conflicting, or unverifiable:
 
 | ID | Type | Description | Proposed handling |
 | --- | --- | --- | --- |
-| ISS-001 | MISSING | The downloaded `realworld-main/` had no Git metadata; the upstream commit was unknown. | RESOLVED as a fact: all 337 files of the inspected copy are identical to upstream commit `25588846` (`docs/00-governance/realworld-baseline.md`). The submodule is approved (DEC-006 b); pinning to this commit is PROPOSED (DEC-012). |
+| ISS-001 | MISSING | The downloaded `realworld-main/` had no Git metadata; the upstream commit was unknown. | RESOLVED as a fact: all 337 files of the inspected copy are identical to upstream commit `25588846` (`docs/00-governance/realworld-baseline.md`). The submodule is approved (DEC-006 b); pinning to this commit is APPROVED (DEC-012, E-09). |
 | ISS-002 | CONFLICT | Backend port: `specs/api/hurl/run-hurl-tests.sh` defaults to `http://localhost:8000`; `specs/api/README.md` and `CLAUDE.md` examples use `http://localhost:3000/api`. | Port is a design decision (Phase 2). Not a product requirement. |
 | ISS-003 | CONFLICT | `RealWorld apps Documentation.docx` is an older snapshot: it says "Over 150 implementations" and "Bootstrap 4 theme" and lists different maintainers, while the repository README says "Over 100" and refers to `assets/theme/styles.css`. | Use repository sources over the docx. |
 | ISS-004 | AMBIGUOUS | Frontend routing docs say "Authentication can be easily switched to session/cookie based", while the E2E selector contract requires a LocalStorage JWT key. | Follow SRC-E2E (higher precedence); confirm in Phase 1. |
 | ISS-005 | CONFLICT | RealWorld frontend and backend docs require at least one unit test per repository. The agreed stack names Playwright for frontend testing, which is mainly an E2E tool. | RESOLVED by DEC-003: Vitest for frontend unit tests. |
-| ISS-006 | AMBIGUOUS | `expectations.md` contains ecosystem expectations (public GitHub repo with Issues open, framework with ≥300 stars, keep up to date). Their applicability to this learning project is undecided. | RESOLVED by DEC-007 (README = C-07, public repository, Issues enabled; star counts checked in Phase 2), except post-project maintenance: DEC-014, PENDING USER APPROVAL. |
+| ISS-006 | AMBIGUOUS | `expectations.md` contains ecosystem expectations (public GitHub repo with Issues open, framework with ≥300 stars, keep up to date). Their applicability to this learning project is undecided. | RESOLVED by DEC-007 (README = C-07, public repository, Issues enabled; star counts checked in Phase 2) and DEC-014 (maintain after the project, E-09). |
 | ISS-007 | CONFLICT | The local NASA-STD-8739.8B PDF shows "Approved: 2022-09-08" and also contains the notice "This official draft has not been approved and is subject to modification. DO NOT USE PRIOR TO APPROVAL." | Use it as a learning reference only. Optionally replace it with the official copy from the NASA Technical Standards System. OPEN. |
 | ISS-008 | AMBIGUOUS | Handbook version labels differ: the 2026-11-15 note and website URL say "Version D" (SWEHBVD), while the local Book A title material shows NASA-HDBK-2203B. The local export covers only six SWE guidance pages plus section listings (MTH-HB-LOCAL). | Treat MTH-HB-ONLINE as the full source; record the version label and page with each Handbook citation. OPEN. |
 | ISS-009 | MISSING | NPR 7150.2D states an expiration date of 2027-03-08, which may fall within the project. | Check NODIS for a successor before Phase 5; keep citing 7150.2D unless the user decides otherwise. |
-| ISS-010 | UNVERIFIABLE | The user approvals recorded in `docs/00-governance/decision-log.md` §1 are transcribed from the Kiro chat session, which is not stored in the repository. | The user confirms the evidence register when deciding Quality Gate S1. OPEN. |
+| ISS-010 | UNVERIFIABLE | The user approvals recorded in `docs/00-governance/decision-log.md` §1 are transcribed from the Kiro chat session, which is not stored in the repository. | CLOSED: the user confirmed the evidence register in the S1 decision (E-09, item 2). The chat transcript itself is still not stored in the repository. |

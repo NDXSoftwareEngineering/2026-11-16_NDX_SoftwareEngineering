@@ -4,7 +4,7 @@ inclusion: always
 
 # Quality Assurance
 
-Baseline version: 1.4 (2026-11-16). Status: READY FOR REVIEW (Quality Gate S1). The baseline as a whole is not approved: v1.0 was approved (evidence E-01) and the v1.1 content was approved (E-08), but the v1.2 to v1.4 text has not been reviewed by the user. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
+Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
 
 Methodology basis: NASA-STD-8739.8B (software assurance tasks and IV&V concepts), NPR 7150.2D (SWE-022 plan and implement software assurance per NASA-STD-8739.8; verification and validation requirements listed in `engineering-process.md` §11), NASA-HDBK-2203 (guidance; no Handbook content is cited in this baseline, see the coverage rule in `requirements-and-sources.md` §1), and SWEBOK v4.0a Ch 5 Software Testing, Ch 8 Software Configuration Management, Ch 12 Software Quality, and Ch 13 Software Security. SWE numbers are cited only after they have been checked in the source.
 
@@ -72,7 +72,7 @@ Review findings are recorded with ID, description, severity, and resolution.
 ## 6. Static Analysis
 
 - Run from Phase 3 onward, on every increment, before each gate.
-- Tools: Ruff for Python, ESLint and Prettier for JavaScript/TypeScript, pip-audit for Python dependencies (DEC-005, APPROVED); `npm audit` for npm dependencies (DEC-013, PROPOSED); TypeScript compiler checks if TypeScript is chosen; Django `manage.py check` (built into Django, including `--deploy` before Phase 5).
+- Tools: Ruff for Python, ESLint and Prettier for JavaScript/TypeScript, pip-audit for Python dependencies (DEC-005, APPROVED); `npm audit` for npm dependencies (DEC-013, APPROVED); TypeScript compiler checks if TypeScript is chosen; Django `manage.py check` (built into Django, including `--deploy` before Phase 5).
 - Findings are fixed or justified in writing. Suppressions must name the rule and the reason.
 
 ## 7. Unit Testing
