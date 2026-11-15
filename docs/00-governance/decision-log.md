@@ -112,4 +112,4 @@ Approver for all decisions: the user (project owner).
 
 1. Keep the implementation updated after the project (DEC-007). The Issues section is decided and enabled.
 2. Confirm the steering v1.1 additions and the list of NASA requirements proposed as not applicable (`engineering-process.md` §11).
-3. Decide whether to do the optional learning exercises: software classification (SWE-020) and requirements mapping matrix (SWE-125).
+3. Optional learning exercises, software classification (SWE-020) and requirements mapping matrix (SWE-125): DEFERRED by the user on 2026-11-16. Not done now; may be revisited later.

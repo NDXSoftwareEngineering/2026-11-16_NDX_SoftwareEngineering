@@ -211,6 +211,6 @@ NPR 7150.2D SWE numbers below were checked against the local PDF text. They are 
 
 Proportionate interpretation for this project:
 - Project plans (SWE-013) are these steering files plus phase documents. A separate plan document is not required.
-- The requirements mapping matrix (SWE-125) is optional. If the user wants it as a learning exercise, it is produced in Phase 1 and lists each referenced SWE as Applied, Tailored, or Not applicable, with a reason.
+- The requirements mapping matrix (SWE-125) and the classification exercise (SWE-020) were deferred by the user on 2026-11-16. If revisited, the mapping matrix is produced and lists each referenced SWE as Applied, Tailored, or Not applicable, with a reason.
 - Classification (SWE-020) is optional. The closest Appendix D definitions are Class E (design concept, research, and general purpose software) and Class F (general purpose computing, business, and IT software). Conduit is not NASA software, so any class assigned is a learning exercise and needs user approval.
 - [RECOMMENDATION, needs approval] Treat as not applicable: SWE-032 (CMMI rating), SWE-136 and SWE-070 (tool and simulation accreditation), SWE-141 and related IV&V requirements, and safety-critical requirements (SWE-023, SWE-134, SWE-184, SWE-192), because the project has no NASA category, no safety-critical software, and no flight software.
