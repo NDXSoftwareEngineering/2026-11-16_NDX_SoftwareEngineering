@@ -34,7 +34,7 @@ Observed on 2026-11-16 (FACT, from command output in this workspace):
 | PostgreSQL | Windows service `postgresql-x64-17` is running; binaries in `E:\2026-11-16 Cai PM o day\2026-11-16 postgresql\bin\`; `psql` is not on PATH |
 | Second Python | Python 3.14 at `C:\Python314\` is the default for the `py` launcher. It has `pypdf` 5.1.0, used only to read reference PDFs. It is not part of the project stack. Project commands must use Python 3.12 explicitly (`python` on PATH, or `py -3.12`). |
 | Not found on PATH | `hurl`, `bash`, `bun`, `gh`, `uv` |
-| Workspace | `E:\2026-11-16-SoftwareEngineering` is the Git repository root, branch `main` (DEC-008). Not yet pushed to GitHub. |
+| Workspace | `E:\2026-11-16-SoftwareEngineering` is the Git repository root, branch `main` (DEC-008). Remote `origin`: https://github.com/NDXSoftwareEngineering/2026-11-16_NDX_SoftwareEngineering (public), first pushed 2026-11-16. |
 
 Rules:
 - Tool paths contain spaces. Always quote paths in commands.
