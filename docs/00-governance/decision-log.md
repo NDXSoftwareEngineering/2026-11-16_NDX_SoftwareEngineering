@@ -4,6 +4,7 @@ Project: Software Engineering Practice with RealWorld Conduit
 Record format: `.kiro/steering/engineering-process.md` §4. Statuses: `engineering-process.md` §2.
 Approver for all decisions: the user (project owner). Kiro never records approval without an entry in the evidence register (§1).
 Log revision: 2 (2026-11-16, Quality Gate S1 corrections SG-01/SG-02). Revision 1 marked several agent-proposed items as approved; those items are now separated and marked PROPOSED or PENDING USER APPROVAL.
+Log revision: 5 (2026-11-18). Adds E-11, DEC-017; DEC-015 v1.1 confirmed.
 Log revision: 4 (2026-11-16). Adds E-10, DEC-015, DEC-016.
 Log revision: 3 (2026-11-16). Records the user's Quality Gate S1 decision (evidence E-09): DEC-011 to DEC-014 approved; steering v1.4 approved.
 
@@ -25,6 +26,7 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | E-08 | "Chấp nhận phần bổ sung v1.1, với giới hạn đã nêu ở mục 1. Chấp nhận danh sách "không áp dụng" gồm SWE-032, SWE-070, IV&V (SWE-141 và các yêu cầu liên quan) và SWE-023/134/184/192. Chuyển SWE-136 sang "áp dụng rút gọn", và thêm ghi chú về SWE-143. Tôi chấp nhận" | Kiro's three proposals on v1.1 references and NASA applicability | Explicit |
 | E-09 | "1. Chấp nhận 2. Xác nhận. 3. Duyệt cả 3. 4. Có. 5. Tôi không có nội dung gì" | Kiro's five Quality Gate S1 decision items: (1) accept S1, (2) confirm the evidence register E-01 to E-08, (3) approve DEC-011, DEC-012, DEC-013, (4) DEC-014 maintenance yes/no, (5) content of SG-06 | Explicit for all five items |
 | E-10 | "1. Số giờ tôi có thể dành mỗi tuần là 4 giờ. Ngày bắt đầu kế hoạch là 18/11/2026. (2) Tôi cần 4 ngày để duyệt 1 gate. (3) Ngôn ngữ cho tài liệu dự án: song ngữ (4) Tôi duyệt và bạn commit và push lên đi" | Kiro's SMART plan and its decision list: hours per week, start date, review time per gate, document language, approve the plan, commit and push | Explicit for the four stated items; "commit và push" is an explicit instruction for this plan file and the decision updates |
+| E-11 | "Xác nhận bản sửa kế hoạch (170 thành 133 test). Ghi trong nhật ký quyết định là READY FOR REVIEW.-> xác nhận . Có đồng ý cho tôi tiếp tục Increment 2 (đọc nội dung E2E, viết phân tích frontend) không? Tôi dừng ở đây để bạn xem nhật ký vấn đề trước. -> Đồng ý. Các vấn đề ISS-011 đến ISS-020 chưa cần quyết định ngay. Chúng được dồn lại để bạn quyết định cùng lúc ở bước rà soát QG1, trừ khi bạn muốn quyết định sớm một số mục. - > tôi đồng ý" | Kiro's three questions after Phase 1 increment 1: (1) confirm the plan correction 170 to 133, (2) continue with increment 2, (3) defer decisions on ISS-011 to ISS-020 to the QG1 review. The user's reply quotes Kiro's text and adds "xác nhận", "Đồng ý", and "tôi đồng ý" after each item | Explicit for all three items |
 
 ## 2. Decision Index
 
@@ -44,8 +46,9 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | DEC-012 | Submodule path and pinned commit | APPROVED | User | 2026-11-16 | E-09 |
 | DEC-013 | Node.js runtime and npm for the frontend | APPROVED | User | 2026-11-16 | E-09 |
 | DEC-014 | Post-project maintenance of the implementation: yes | APPROVED | User | 2026-11-16 | E-09 (E-05 was ambiguous) |
-| DEC-015 | Project plan v1.0 and its parameters | APPROVED | User | 2026-11-16 | E-10 |
+| DEC-015 | Project plan (v1.0 parameters; v1.1 correction) | APPROVED | User | 2026-11-16 (v1.0); 2026-11-18 (v1.1) | E-10, E-11 |
 | DEC-016 | Project documents are bilingual (English and Vietnamese) | APPROVED (format details OPEN) | User | 2026-11-16 | E-10 |
+| DEC-017 | Phase 1 issues ISS-011 to ISS-020 are decided together at the QG1 review | APPROVED | User | 2026-11-18 | E-11 |
 
 DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1), or were stated in the steering files as rules without approval (DEC-013).
 
@@ -185,8 +188,8 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Decision: Approve the project plan v1.0 (`docs/00-governance/project-plan.md`) with these user-stated parameters: 4 hours per week; start date 2026-11-18; 4 days for the user to decide each gate.
 - Rationale: The user's parameters replace the assumed 10 hours per week and 2-day review. With the unchanged effort estimate of 120 hours, QG5 is planned for 2027-07-06 (ESTIMATE).
 - Consequences: Gate dates in the plan are ESTIMATES and are recalculated after each gate. The planned QG5 date is after the NPR 7150.2D expiry date (2027-03-08); ISS-009 handling was tightened (check NODIS before 2027-03-01). The effort estimates (20/20/45/25/10 hours) remain Kiro's estimates, not validated.
-- Correction 2026-11-18 (plan v1.1): the E2E test count in the approved plan ("about 170") was wrong; the correct static count is 133. Only that figure changed; parameters, schedule, and estimates are unchanged. The user's confirmation of the correction is pending.
-- Status: APPROVED (v1.0). Evidence: E-10. v1.1 correction: READY FOR REVIEW.
+- Correction 2026-11-18 (plan v1.1): the E2E test count in the approved plan ("about 170") was wrong; the correct static count is 133. Only that figure changed; parameters, schedule, and estimates are unchanged. The user confirmed the correction on 2026-11-18 (E-11).
+- Status: APPROVED (v1.0 and v1.1). Evidence: E-10, E-11.
 
 ### DEC-016: Project documents are bilingual (English and Vietnamese)
 
@@ -195,6 +198,13 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Open (not decided by the user): which version controls if the two differ, whether text is parallel per paragraph or in separate sections, and whether the existing governance documents get translated. Kiro proposes English as the controlling text and parallel Vietnamese sections, and keeping existing governance documents as they are until the user decides (project-plan OPEN-01).
 - Consequences: `technology-stack.md` §11 reworded on 2026-11-16 to apply this decision. The user has not yet reviewed that wording. The effort estimate does not include bilingual writing (A-10, R-09).
 - Status: APPROVED for the principle. Evidence: E-10. Format details: OPEN.
+
+### DEC-017: Phase 1 issues ISS-011 to ISS-020 are decided together at the QG1 review
+
+- Context: Phase 1 increment 1 found ten open source issues (`docs/01-requirements/issues-log.md`). Kiro asked whether the user wants to decide any of them early.
+- Decision: None is decided early. All are presented together at the QG1 review. Until then each requirement that depends on an open issue is marked DRAFT and refers to the issue.
+- Consequences: The SRS drafted in increments 3 and 4 carries the recommended option for each issue as a proposal, not as an approved requirement.
+- Status: APPROVED. Evidence: E-11.
 
 ## 4. Steering Approval History
 

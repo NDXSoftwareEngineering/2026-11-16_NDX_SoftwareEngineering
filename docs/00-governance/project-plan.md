@@ -2,7 +2,7 @@
 
 Dự án / Project: Thực hành Software Engineering qua ứng dụng RealWorld Conduit / Software Engineering practice through the RealWorld Conduit application.
 Phiên bản / Version: 1.1. Ngày lập / Date: 2026-11-16. Cập nhật / Updated: 2026-11-18 (sửa số liệu E2E / E2E count corrected).
-Trạng thái / Status: v1.0 **APPROVED** by the user on 2026-11-16 (evidence E-10 in `decision-log.md`, DEC-015). v1.1 changes only the E2E test count in §4 and in the Phase 4 measure; the user has not yet confirmed that correction (READY FOR REVIEW). Correction record: `docs/01-requirements/phase1-status.md` §5, C-01.
+Trạng thái / Status: v1.0 **APPROVED** by the user on 2026-11-16 (evidence E-10 in `decision-log.md`, DEC-015). v1.1 changes only the E2E test count in §4 and in the Phase 4 measure; the user confirmed that correction on 2026-11-18 (evidence E-11). v1.1 is APPROVED. Correction record: `docs/01-requirements/phase1-status.md` §5, C-01.
 Người lập / Author: Kiro. Người duyệt duy nhất / Sole approver: người dùng / the user.
 
 Căn cứ / Basis: `.kiro/steering/` và / and `docs/00-governance/decision-log.md`. Kế hoạch này không thay đổi phạm vi, công nghệ hay quy trình đã duyệt / This plan does not change the approved scope, technology, or process.
@@ -168,7 +168,7 @@ Với 4 giờ mỗi tuần, đơn vị công việc nên nhỏ: mỗi buổi 2 g
 | --- | --- | --- |
 | 1 | Quality Gate S1 chấp nhận | Đạt (E-09) |
 | 2 | Kế hoạch này được duyệt | Đạt (E-10, DEC-015) |
-| 3 | Người dùng ra lệnh bắt đầu Giai đoạn 1 | Chờ người dùng (ngày bắt đầu kế hoạch: 2026-11-18) |
+| 3 | Người dùng ra lệnh bắt đầu Giai đoạn 1 | Đạt (người dùng ra lệnh ngày 2026-11-18; Giai đoạn 1 đang chạy) |
 
 ## 11. Bản ghi duyệt / Approval record
 
