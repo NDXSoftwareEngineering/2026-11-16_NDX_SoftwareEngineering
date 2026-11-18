@@ -185,7 +185,8 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Decision: Approve the project plan v1.0 (`docs/00-governance/project-plan.md`) with these user-stated parameters: 4 hours per week; start date 2026-11-18; 4 days for the user to decide each gate.
 - Rationale: The user's parameters replace the assumed 10 hours per week and 2-day review. With the unchanged effort estimate of 120 hours, QG5 is planned for 2027-07-06 (ESTIMATE).
 - Consequences: Gate dates in the plan are ESTIMATES and are recalculated after each gate. The planned QG5 date is after the NPR 7150.2D expiry date (2027-03-08); ISS-009 handling was tightened (check NODIS before 2027-03-01). The effort estimates (20/20/45/25/10 hours) remain Kiro's estimates, not validated.
-- Status: APPROVED. Evidence: E-10.
+- Correction 2026-11-18 (plan v1.1): the E2E test count in the approved plan ("about 170") was wrong; the correct static count is 133. Only that figure changed; parameters, schedule, and estimates are unchanged. The user's confirmation of the correction is pending.
+- Status: APPROVED (v1.0). Evidence: E-10. v1.1 correction: READY FOR REVIEW.
 
 ### DEC-016: Project documents are bilingual (English and Vietnamese)
 

@@ -1,8 +1,8 @@
 # Kế hoạch dự án theo nguyên tắc SMART / SMART Project Plan
 
 Dự án / Project: Thực hành Software Engineering qua ứng dụng RealWorld Conduit / Software Engineering practice through the RealWorld Conduit application.
-Phiên bản / Version: 1.0. Ngày lập / Date: 2026-11-16. Cập nhật / Updated: 2026-11-16 (thông số của người dùng / user parameters).
-Trạng thái / Status: **APPROVED** by the user on 2026-11-16 (evidence E-10 in `decision-log.md`). Decision: DEC-015.
+Phiên bản / Version: 1.1. Ngày lập / Date: 2026-11-16. Cập nhật / Updated: 2026-11-18 (sửa số liệu E2E / E2E count corrected).
+Trạng thái / Status: v1.0 **APPROVED** by the user on 2026-11-16 (evidence E-10 in `decision-log.md`, DEC-015). v1.1 changes only the E2E test count in §4 and in the Phase 4 measure; the user has not yet confirmed that correction (READY FOR REVIEW). Correction record: `docs/01-requirements/phase1-status.md` §5, C-01.
 Người lập / Author: Kiro. Người duyệt duy nhất / Sole approver: người dùng / the user.
 
 Căn cứ / Basis: `.kiro/steering/` và / and `docs/00-governance/decision-log.md`. Kế hoạch này không thay đổi phạm vi, công nghệ hay quy trình đã duyệt / This plan does not change the approved scope, technology, or process.
@@ -39,13 +39,13 @@ Ngôn ngữ / Language: tiêu đề và nội dung chính bằng tiếng Việt,
 
 ## 4. Quy mô nguồn đã đo / Measured source size (FACT)
 
-Đo bằng script ngày 2026-11-16 trên submodule `realworld-main/` (commit `25588846`). Số đếm Hurl và E2E dựa trên biểu thức chính quy nên là xấp xỉ, sẽ được xác nhận lại ở Giai đoạn 1.
+Đo bằng script trên submodule `realworld-main/` (commit `25588846`). Số liệu E2E được sửa ngày 2026-11-18: bản v1.0 ghi khoảng 170 test, nhưng đó là tổng của 133 test, 22 nhóm `describe` và 15 hook. Số Hurl (157 request) được xác nhận lại bằng script ngày 2026-11-18.
 
 | Nguồn / Source | Số liệu / Figures |
 | --- | --- |
 | OpenAPI (`specs/api/openapi.yml`) | 12 đường dẫn / paths, 19 thao tác / operations |
 | Hurl (`specs/api/hurl/`) | 13 file, khoảng / about 157 request |
-| E2E (`specs/e2e/`) | 12 file `.spec.ts`, khoảng / about 170 test |
+| E2E (`specs/e2e/`) | 12 file `.spec.ts`, 133 khai báo `test()` tĩnh / static declarations, 22 nhóm `describe` (số test chạy thực tế cao hơn vì các test XSS lặp theo payload) |
 
 ## 5. Kế hoạch theo giai đoạn (SMART) / Plan by phase
 
@@ -91,7 +91,7 @@ Công thức lịch / Schedule rule (ESTIMATE): thời gian làm việc = số g
 | Tiêu chí | Nội dung |
 | --- | --- |
 | S | Kế hoạch kiểm thử; chạy unit, tích hợp, API (Hurl), E2E (Playwright), kiểm tra bảo mật; xử lý lỗi và hồi quy; RTM v4; báo cáo tổng kết. |
-| M | Bộ Hurl RealWorld đạt toàn bộ (khoảng 157 request; số chính xác lấy từ đầu ra Hurl). Bộ Playwright RealWorld đạt toàn bộ (khoảng 170 test; số chính xác từ báo cáo). 100% yêu cầu có trạng thái xác minh PASS hoặc xử lý được duyệt. 0 lỗi Critical/High còn mở. Quét thư viện không còn High/Critical chưa xử lý. |
+| M | Bộ Hurl RealWorld đạt toàn bộ (khoảng 157 request; số chính xác lấy từ đầu ra Hurl). Bộ Playwright RealWorld đạt toàn bộ (133 khai báo test tĩnh; số chạy thực tế lấy từ báo cáo Playwright). 100% yêu cầu có trạng thái xác minh PASS hoặc xử lý được duyệt. 0 lỗi Critical/High còn mở. Quét thư viện không còn High/Critical chưa xử lý. |
 | A | ESTIMATE: 25 giờ = 44 ngày. Hai bộ test đã có sẵn. |
 | R | Xác minh sản phẩm theo yêu cầu (`quality-assurance.md` QO-1 đến QO-6). |
 | T | ESTIMATE: 2027-04-28 đến 2027-06-10, hạn quyết định **2027-06-14**. |
