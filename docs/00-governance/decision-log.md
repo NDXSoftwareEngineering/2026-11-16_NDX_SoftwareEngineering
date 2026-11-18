@@ -4,6 +4,7 @@ Project: Software Engineering Practice with RealWorld Conduit
 Record format: `.kiro/steering/engineering-process.md` §4. Statuses: `engineering-process.md` §2.
 Approver for all decisions: the user (project owner). Kiro never records approval without an entry in the evidence register (§1).
 Log revision: 2 (2026-11-16, Quality Gate S1 corrections SG-01/SG-02). Revision 1 marked several agent-proposed items as approved; those items are now separated and marked PROPOSED or PENDING USER APPROVAL.
+Log revision: 4 (2026-11-16). Adds E-10, DEC-015, DEC-016.
 Log revision: 3 (2026-11-16). Records the user's Quality Gate S1 decision (evidence E-09): DEC-011 to DEC-014 approved; steering v1.4 approved.
 
 ## 1. Approval Evidence Register
@@ -23,6 +24,7 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | E-07 | "Bài tập tùy chọn: không làm 2 bài tập đó ngay." | Kiro's question whether to do the SWE-020 and SWE-125 exercises | Explicit |
 | E-08 | "Chấp nhận phần bổ sung v1.1, với giới hạn đã nêu ở mục 1. Chấp nhận danh sách "không áp dụng" gồm SWE-032, SWE-070, IV&V (SWE-141 và các yêu cầu liên quan) và SWE-023/134/184/192. Chuyển SWE-136 sang "áp dụng rút gọn", và thêm ghi chú về SWE-143. Tôi chấp nhận" | Kiro's three proposals on v1.1 references and NASA applicability | Explicit |
 | E-09 | "1. Chấp nhận 2. Xác nhận. 3. Duyệt cả 3. 4. Có. 5. Tôi không có nội dung gì" | Kiro's five Quality Gate S1 decision items: (1) accept S1, (2) confirm the evidence register E-01 to E-08, (3) approve DEC-011, DEC-012, DEC-013, (4) DEC-014 maintenance yes/no, (5) content of SG-06 | Explicit for all five items |
+| E-10 | "1. Số giờ tôi có thể dành mỗi tuần là 4 giờ. Ngày bắt đầu kế hoạch là 18/11/2026. (2) Tôi cần 4 ngày để duyệt 1 gate. (3) Ngôn ngữ cho tài liệu dự án: song ngữ (4) Tôi duyệt và bạn commit và push lên đi" | Kiro's SMART plan and its decision list: hours per week, start date, review time per gate, document language, approve the plan, commit and push | Explicit for the four stated items; "commit và push" is an explicit instruction for this plan file and the decision updates |
 
 ## 2. Decision Index
 
@@ -42,6 +44,8 @@ Limitation (observation OBS-S1-01): the chat transcript is not stored in this re
 | DEC-012 | Submodule path and pinned commit | APPROVED | User | 2026-11-16 | E-09 |
 | DEC-013 | Node.js runtime and npm for the frontend | APPROVED | User | 2026-11-16 | E-09 |
 | DEC-014 | Post-project maintenance of the implementation: yes | APPROVED | User | 2026-11-16 | E-09 (E-05 was ambiguous) |
+| DEC-015 | Project plan v1.0 and its parameters | APPROVED | User | 2026-11-16 | E-10 |
+| DEC-016 | Project documents are bilingual (English and Vietnamese) | APPROVED (format details OPEN) | User | 2026-11-16 | E-10 |
 
 DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1), or were stated in the steering files as rules without approval (DEC-013).
 
@@ -175,6 +179,22 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 - Consequences: Maintenance scope and frequency are not yet defined. They are to be planned in Phase 5 (NPR 7150.2D SWE-075 operations and maintenance planning, as mapped in `engineering-process.md` §11). A steering change for this will be proposed when Phase 5 is planned.
 - Status: APPROVED. Evidence: E-09 (item 4).
 
+### DEC-015: Project plan v1.0 and its parameters
+
+- Context: The user asked for a SMART plan. Kiro prepared `docs/00-governance/project-plan.md` with assumed parameters; the user supplied the real ones.
+- Decision: Approve the project plan v1.0 (`docs/00-governance/project-plan.md`) with these user-stated parameters: 4 hours per week; start date 2026-11-18; 4 days for the user to decide each gate.
+- Rationale: The user's parameters replace the assumed 10 hours per week and 2-day review. With the unchanged effort estimate of 120 hours, QG5 is planned for 2027-07-06 (ESTIMATE).
+- Consequences: Gate dates in the plan are ESTIMATES and are recalculated after each gate. The planned QG5 date is after the NPR 7150.2D expiry date (2027-03-08); ISS-009 handling was tightened (check NODIS before 2027-03-01). The effort estimates (20/20/45/25/10 hours) remain Kiro's estimates, not validated.
+- Status: APPROVED. Evidence: E-10.
+
+### DEC-016: Project documents are bilingual (English and Vietnamese)
+
+- Context: The steering file `technology-stack.md` §11 allowed one language per document. The user decided on bilingual documents.
+- Decision: Project documents are written in both English and Vietnamese. Code, identifiers, comments, and commit messages stay in English.
+- Open (not decided by the user): which version controls if the two differ, whether text is parallel per paragraph or in separate sections, and whether the existing governance documents get translated. Kiro proposes English as the controlling text and parallel Vietnamese sections, and keeping existing governance documents as they are until the user decides (project-plan OPEN-01).
+- Consequences: `technology-stack.md` §11 reworded on 2026-11-16 to apply this decision. The user has not yet reviewed that wording. The effort estimate does not include bilingual writing (A-10, R-09).
+- Status: APPROVED for the principle. Evidence: E-10. Format details: OPEN.
+
 ## 4. Steering Approval History
 
 | Version | Content | Status | Evidence |
@@ -185,9 +205,11 @@ DEC-011 to DEC-014 were split out of DEC-006, DEC-007, and DEC-008 (revision 1),
 | 1.3 | Text edits applying DEC-009 and DEC-010; status line "APPROVED by the user" | Decisions approved; edited text not reviewed. The status line overstated approval (SG-05). | E-07, E-08 cover decisions only |
 | 1.4 | Quality Gate S1 corrections (SG-01 to SG-05) | APPROVED with Quality Gate S1 acceptance | E-09 (item 1) |
 | 1.4, status update | After E-09, only status words and evidence IDs were changed to record DEC-011 to DEC-014 and ISS-010; no other text changed. Commit message: "docs: record Quality Gate S1 acceptance (E-09)". | Administrative record of E-09 | E-09 |
+| 1.5 (technology-stack.md only) | §11 language rule reworded to apply DEC-016. The other four files remain v1.4. | Decision approved (E-10); the wording is READY FOR REVIEW | E-10 covers the decision only |
 
 ## 5. Open Points
 
 1. None of DEC-001 to DEC-014 is open.
 2. Quality Gate S1: ACCEPTED by the user on 2026-11-16 (E-09). Gate record: `docs/00-governance/qg-s1-review-package.md` §7.
-3. Issues carried forward with the S1 acceptance: ISS-002, ISS-003, ISS-004, ISS-007, ISS-008, ISS-009 (`requirements-and-sources.md` §8).
+4. Project plan approved (DEC-015). Open: bilingual format details (project-plan OPEN-01) and review of the reworded `technology-stack.md` §11.
+5. Issues carried forward with the S1 acceptance: ISS-002, ISS-003, ISS-004, ISS-007, ISS-008, ISS-009 (`requirements-and-sources.md` §8).

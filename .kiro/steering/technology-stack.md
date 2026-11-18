@@ -4,7 +4,7 @@ inclusion: always
 
 # Technology Stack
 
-Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4.
+Baseline version: 1.4 (2026-11-16). Status: APPROVED by the user on 2026-11-16 with the acceptance of Quality Gate S1 (evidence E-09). After that approval only status markers were updated to record E-09. History and evidence: `docs/00-governance/decision-log.md` §1 and §4. Exception: §11 (language rule) was reworded on 2026-11-16 to apply DEC-016; that wording is READY FOR REVIEW.
 
 ## 1. Change Policy
 
@@ -120,7 +120,7 @@ Notes:
 ## 11. Coding Conventions
 
 General:
-- Code, identifiers, comments, and commit messages in English. Project documents may be in English or Vietnamese as the user chooses, but one language per document.
+- Code, identifiers, comments, and commit messages in English. Project documents are bilingual, English and Vietnamese (DEC-016, APPROVED in principle; format details are open, see `docs/00-governance/project-plan.md` §9 OPEN-01). Existing governance documents keep their current language until OPEN-01 is decided.
 - Small, single-purpose functions and modules. No dead code, no commented-out code in commits.
 - Reference requirement IDs in tests (test names or docstrings) to support traceability.
 - The coding standard and secure coding practices are recorded in Phase 2 (NPR 7150.2D SWE-061, SWE-207) and checked with static analysis in Phase 3 (SWE-135, SWE-185).
